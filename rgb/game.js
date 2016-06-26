@@ -2,7 +2,7 @@ canvas = document.getElementById("gameCanvas");
 ctx = canvas.getContext("2d");
 
 var player = new Image();
-var red = "red.PNG";
+var red = "red.png";
 var blue = "blue.png";
 var green = "green.png";
 var purple = "purple.png";
