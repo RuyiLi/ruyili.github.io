@@ -37,18 +37,18 @@ function renderFrame() {
 	requestAnimationFrame(renderFrame);
 	
 	if (37 && 39 in keysDown){
-		player.src = purple;
+		player.src = "purple.png";
 		pcolor = "#800080"
 	}
 	
 	if(37 in keysDown && !(39 in keysDown)){
-		player.src = red;
+		player.src = "red.png";
 		pcolor = "#FF0000"
 	}else if (39 in keysDown && !(37 in keysDown)){
-		player.src = blue;	
+		player.src = "blue.png";	
 		pcolor = "#0000FF"
 	}else if (!(37 in keysDown) && !(39 in keysDown)){
-		player.src = green;	
+		player.src = "green.png";	
 		pcolor = "#00FF00"
 	}
 	document.body.style.backgroundColor = pcolor;
