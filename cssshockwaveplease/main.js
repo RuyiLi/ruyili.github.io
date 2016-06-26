@@ -14,7 +14,7 @@ function magic(){
     isHex  = /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test('#' + hex    );
     
     if (isHex){
-        res = "@keyframes generated{\n   0%{\n      width: 0px;\n      height: 0px;\n      opacity: 1;;\n      top: " + y + "px;\n      left: " + x + "px;\n   }\n   100%{\n      width: " + dia + "px;\n      height: " + dia + "px;\n      opacity: 0;\n      top: " + (y - rad) + "px;\n      left: " + (x - rad) + "px;\n   }\n}\n\n#shockwave{\n   position: relative;\n   top: -9999px;\n   left: -9999px;\n   width: " + dia + "px;\n   height: " + dia + "px;\n   border-radius: " + dia + "px;\n   background-color: #" + hex + ";\n   animation: generated " + dur + "s";
+        res = "@keyframes generated{\n   0%{\n      width: 0px;\n      height: 0px;\n      opacity: 1;\n      top: " + y + "px;\n      left: " + x + "px;\n   }\n   100%{\n      width: " + dia + "px;\n      height: " + dia + "px;\n      opacity: 0;\n      top: " + (y - rad) + "px;\n      left: " + (x - rad) + "px;\n   }\n}\n\n#shockwave{\n   position: relative;\n   top: -9999px;\n   left: -9999px;\n   width: " + dia + "px;\n   height: " + dia + "px;\n   border-radius: " + dia + "px;\n   background-color: #" + hex + ";\n   animation: generated " + dur + "s";
     
         if(endless){
             res += " infinite;\n}";
