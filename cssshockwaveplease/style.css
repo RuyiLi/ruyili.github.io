@@ -105,10 +105,10 @@ button:hover{
     width: 60%;
     height: 33%;
     font-size: 15px;
-    position: relative;
+    position: fixed;
     font-family: 'Roboto Mono';
     color: black;
-    top: -95%;
+    top: 62%;
     left: 35%;
     border: 1px solid black;
     border-bottom-right-radius: 10px;
