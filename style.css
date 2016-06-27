@@ -49,13 +49,13 @@ h1{
     width: 100%;
     table-layout: fixed;
     border-spacing: 10px;
-    height: 150px;
+    height: 200px;
 }
 
 .col{
     display: table-cell;
     border: 5px groove black;
-    height: 150px;
+    height: 200px;
     vertical-align: middle;
 }
 		
