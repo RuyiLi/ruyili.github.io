@@ -49,13 +49,13 @@ h1{
     width: 100%;
     table-layout: fixed;
     border-spacing: 10px;
-    height: 90px;
+    height: 150px;
 }
 
 .col{
     display: table-cell;
     border: 5px groove black;
-    height: 90px;
+    height: 150px;
 }
 		
 .col:hover{
