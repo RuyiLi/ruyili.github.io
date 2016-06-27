@@ -54,12 +54,12 @@ h1{
 
 .col{
     display: table-cell;
-    border: 5px groove #3399FF;
+    border: 5px groove black;
     height: 10%;
 }
 		
 .col:hover{
-    border: 5px groove #45a2ff;
+    border: 5px groove gray;
 }	
 		
 b{
