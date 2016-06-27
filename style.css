@@ -56,6 +56,7 @@ h1{
     display: table-cell;
     border: 5px groove black;
     height: 150px;
+    vertical-align: middle;
 }
 		
 .col:hover{
