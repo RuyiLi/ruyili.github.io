@@ -14,9 +14,9 @@
 	outline: none;
 	cursor: pointer;
   	box-shadow: 0 6px #454545;
-	-webkit-transition-duration: .5s;
-	-moz-transition-duration: .5s;
-        transition-duration: .5s;
+	-webkit-transition-duration: .2s;
+	-moz-transition-duration: .2s;
+        transition-duration: .2s;
 }		
 
 .bigred:hover{
@@ -49,13 +49,13 @@ h1{
     width: 100%;
     table-layout: fixed;
     border-spacing: 10px;
-    height: 10%;
+    height: 90px;
 }
 
 .col{
     display: table-cell;
     border: 5px groove black;
-    height: 10%;
+    height: 90px;
 }
 		
 .col:hover{
