@@ -7,6 +7,11 @@ var colory;
 var color;
 var pcolor;
 var speed;
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
 
 addEventListener("keydown", function (e) {
 	keysDown[e.keyCode] = true;
@@ -18,7 +23,7 @@ addEventListener("keyup", function (e) {
 
 function setup(){
 	canvas.width = 480;
-	canvas.height = 685;
+	canvas.height = height - 20;
    colory = 0;	
    speed = 5;
    pcolor = "#00FF00";
@@ -71,9 +76,9 @@ function attack(){
 		changeColor();
 	}
 	
-	if(colory > 520 && colory < 614){
+	if(colory > 520 && colory < 584){
 		if(color != pcolor){
-			setup();																																																																																																															
+			setup();
 		}
 	}
 };
