@@ -33,18 +33,18 @@ function renderFrame() {
 	requestAnimationFrame(renderFrame);
 	
 	if (37 && 39 in keysDown){
-		player.src = "https://ruyili.github.io/rgb/purple.png";
+		player.src = "purple.png";
 		pcolor = "#800080"
 	}
 	
 	if(37 in keysDown && !(39 in keysDown)){
-		player.src = "https://ruyili.github.io/rgb/red.png";
+		player.src = "red.png";
 		pcolor = "#FF0000"
 	}else if (39 in keysDown && !(37 in keysDown)){
-		player.src = "https://ruyili.github.io/rgb/blue.png";	
+		player.src = "blue.png";	
 		pcolor = "#0000FF"
 	}else if (!(37 in keysDown) && !(39 in keysDown)){
-		player.src = "https://ruyili.github.io/rgb/green.png";	
+		player.src = "green.png";	
 		pcolor = "#00FF00"
 	}
 	document.body.style.backgroundColor = pcolor;
