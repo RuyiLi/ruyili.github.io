@@ -1,115 +1,47 @@
-canvas = document.getElementById("gameCanvas");
-ctx = canvas.getContext("2d");
+<!DOCTYPE html>
+<html>
 
-var player = new Image();
-var keysDown = {};
-var colory;
-var color;
-var pcolor;
-var speed;
-var body = document.body,
-    html = document.documentElement;
-
-var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
-
-addEventListener("keydown", function (e) {
-	keysDown[e.keyCode] = true;
-}, false);
-
-addEventListener("keyup", function (e) {
-	delete keysDown[e.keyCode];
-}, false);
-
-function setup(){
-	canvas.width = 480;
-	canvas.height = height - 20;
-   colory = 0;	
-   speed = 5;
-   pcolor = "#00FF00";
-	
-	renderFrame();
-	attack();
-	changeColor();
-}
-
-
-function renderFrame() {
-	requestAnimationFrame(renderFrame);
-	
-	if (37 && 39 in keysDown){
-		player.src = "purple.png";
-		pcolor = "#800080"
-	}
-	
-	if(37 in keysDown && !(39 in keysDown)){
-		player.src = "red.png";
-		pcolor = "#FF0000"
-	}else if (39 in keysDown && !(37 in keysDown)){
-		player.src = "blue.png";	
-		pcolor = "#0000FF"
-	}else if (!(37 in keysDown) && !(39 in keysDown)){
-		player.src = "green.png";	
-		pcolor = "#00FF00"
-	}
-	document.body.style.backgroundColor = pcolor;
-}
-
-(function ecksdee(){
-	requestAnimationFrame(ecksdee);
-   colory = colory + speed;
-})();
-
-function attack(){
-	requestAnimationFrame(attack);
-	ctx.fillStyle = color;
-	ctx.clearRect(0, 0, 480, 685)
-	ctx.fillRect(0, colory, 480, 30);
-   ctx.drawImage(player, 208, 550);
-	
-	if(speed < 75){
-		speed += 0.001;
-	}	
-	
-	if(colory > 685){
-		colory = 0;
-		changeColor();
-	}
-	
-	if(colory > 520 && colory < 584){
-		if(color != pcolor){
-			setup();
+<head>
+	<title>RGB</title>
+	<style type="text/css">
+		#gameCanvas{
+			background-color: black;		
+			padding-left: 0;
+   		padding-right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			border: solid 3px white;
 		}
-	}
-};
+		body{
+			background-color: black;		
+		}
+        *{
+            font-family: 'Press Start 2P', cursive;
+        }
+        .fontCred{
+            width: 8%;
+            position: fixed;
+            left: 0px;
+            top: 40%;
+            font-size: 10px;
+        }
+        #score{
+            color: white;
+            font-size: 20px;
+            position: fixed;
+            left: 48%;
+            top: 10%;
+        }
+	</style>
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+</head>
 
-function changeColor(){
-	//purple #800080
-	//red #FF0000
-	//green #00ff00
-	//blue #0000FF
-	var rand = randInt(1, 8);
-	if (rand == 1){
-		color = "#800080";
-	}else if (rand == 2){
-		color = "#FF0000";
-	}else if (rand == 3){
-		color = "#00FF00";
-	}else if (rand == 4){
-		color = "#0000FF";
-	}else if (rand == 5){
-		color = "#800080";
-	}else if (rand == 6){
-		color = "#FF0000";
-	}else if (rand == 7){
-		color = "#00FF00";
-	}else if (rand == 8){
-		color = "#0000FF";
-	}
-};
+<body>
+	<canvas id="gameCanvas"></canvas>
+    <p class="fontCred">"Press Start 2P" by Cody "CodeMan38" Boisclair.</p>
+    <p id="score"></p>
+	<script type="text/javascript" src="game.js"></script>
+</body>
 
-function randInt(min, max){
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-setup();
+</html>
