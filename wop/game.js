@@ -26,12 +26,12 @@ var w = document.body.offsetWidth;
 
 function setup(){
 	//width and height
-	canvas.height = h * (5 / 4);
+	canvas.height = h / 3 * 4;
 	canvas.width = w;
     
     
 	c.width = w;
-	c.height = h - canvas.height;
+	c.height = h / 3;
 	cx.font = '20px dtm';
     
     g = 0;
