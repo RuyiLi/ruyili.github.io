@@ -1,7 +1,7 @@
 #WARRIORS OF PAINT
 
 ##INSTRUCTIONS:
-Draw in the space provided to destroy your enemies. Each enemy you destroy gives you gold, which you can use to upgrade your draw damage. Try getting as much points as possible.
+Draw in the space provided to destroy your enemies; the more you draw, the more damage you do. Each enemy you destroy gives you gold, which you can use to upgrade your draw damage. Try getting as much points as possible.
 As you progress in the game, enemies get more armor, and are more resistant to your attacks.
 
 ##SPECIAL ABILITIES:
