@@ -10,13 +10,16 @@ Currently there are two abilities available: Cleave and eXecute.
 ###Cleave
 This move deals true damage, ignoring armor and dealing more damage depending on your damage and how far you are in the game.
 
+Cooldown: 4 seconds
+
 ###eXecute
 This ability will draw an X on the drawing board. Draw on the board to unleash tons of damage.
 
+Cooldown: 8 seconds
 
 ##CHANGELOG
 
-###Version 0.01:
+###Version 0.01 (July 2, 2016):
 -Added enemies
 
 -Added health to enemies
