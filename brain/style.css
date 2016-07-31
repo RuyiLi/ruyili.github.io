@@ -1,0 +1,76 @@
+@font-face {
+    font-family: uni;
+    src: url(uni.otf);
+}
+
+*{
+    font-family: uni;
+}
+
+body{
+    background-color: #222438;
+}
+
+div{
+    margin: 0;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    width: 100%;
+    background-color: #222438;
+}
+
+h1{
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #FFB000;
+}
+
+#censored{
+    background-color: black;
+    transition-duration: 0.5s;
+    color: black;
+}
+
+#multi{
+    height: 1200px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #FFB000;
+    transition-duration: 0.4s;
+    vertical-align: middle;
+}
+
+a:hover{
+    font-size: 50px;
+    color: white;
+}
+
+#censored:hover{
+    background-color: transparent;
+    color: #FFB000;
+}
+
+p{
+    display: inline-block;
+    font-size: 50px;
+    color: #FFB000;
+}
+
+#ubuntu{
+    display: inline-block;
+}
+
+#ubuntu{
+    width: 150px;
+    height: 150px;
+}
+
+#windows{
+    width: 150px;
+    height: 150px;
+    
+}
