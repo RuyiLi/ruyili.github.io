@@ -26,3 +26,5 @@ v0.1.0:
       90 maximum HP
       5 bullet damage
       
+v0.1.1:
+  -Added descriptions for each class that are accesible by hovering over the class.
