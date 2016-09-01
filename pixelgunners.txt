@@ -28,3 +28,4 @@ v0.1.0:
       
 v0.1.1:
   -Added descriptions for each class that are accesible by hovering over the class.
+  -Fixed a bug where shooting a health pack as a tank would set it to 120 hp instead of 240. 
