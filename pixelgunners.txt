@@ -1,0 +1,27 @@
+v0.0.1 - v0.0.9:
+  -Added player
+  -Added bullets
+  -Added a healthbar
+  -Added health packs
+  -Added respawn function
+  -Allowed player to choose a name
+  -Added multiplayer support
+  
+v0.1.0:
+  -Added classes:
+  
+    RANGER:
+      50 bullet range
+      120 max HP
+      2 bullet damage
+      
+    TANK:
+      25 bullet range
+      240 max HP
+      2 bullet damage
+      
+    ASSASSIN:
+      20 bullet range
+      90 maximum HP
+      5 bullet damage
+      
