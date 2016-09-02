@@ -59,6 +59,7 @@ v0.1.3:
       
 v0.1.4:
   -Improved visuals
+  -Changed background
   -Added graphics for:
     RANGER
     TANK
