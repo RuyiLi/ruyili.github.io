@@ -48,4 +48,12 @@ v0.1.2:
     MELEE:
       -Movement speed halved
     ASSASSIN:
-      90 HP -> 80 HP 
+      90 max HP -> 80 max HP 
+      
+v0.1.3:
+  -Added new class:
+    SCOUT:
+      3 bullet range
+      40 max HP
+      7 bullet damage
+      
