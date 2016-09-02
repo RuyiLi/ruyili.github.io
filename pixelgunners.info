@@ -99,3 +99,9 @@ v0.1.7:
   -Changed scout:
     5 damage
     Faster
+    
+v0.1.8:
+  -Added trapper:
+    100 trap time
+    120 HP
+    20 damage
