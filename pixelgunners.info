@@ -86,3 +86,13 @@ v0.1.6:
       100 max HP
       2 bullet damage
       1 lifesteal
+      
+v0.1.7:
+  -Buffed vampire, ranger, and tank:
+    VAMPIRE:
+      3 damage
+      2 lifesteal
+    RANGER:
+      4 damage
+    TANK:
+      3 damage
