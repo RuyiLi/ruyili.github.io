@@ -57,3 +57,13 @@ v0.1.3:
       40 max HP
       7 bullet damage
       
+v0.1.4:
+  -Improved visuals
+  -Added graphics for:
+    RANGER
+    TANK
+    ASSASSIN
+    MELEE
+    SCOUT
+  -Changed bullet colors depending on the class
+      
