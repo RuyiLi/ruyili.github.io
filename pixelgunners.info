@@ -105,3 +105,10 @@ v0.1.8:
     100 trap time
     120 HP
     20 damage
+    
+v0.1.9:
+  -Added cryomancer:
+    20 bullet range
+    100 HP
+    2 damage
+    2 slow
