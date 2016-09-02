@@ -44,3 +44,6 @@ v0.1.2:
       2 bullet damage -> 3 bullet damage
       
   -Fixed a bug where melee would gain 240 health upon shooting a health pack
+  -Nerfed melee:
+    MELEE:
+      -Movement speed halved
