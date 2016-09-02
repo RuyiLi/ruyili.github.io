@@ -67,4 +67,14 @@ v0.1.4:
     MELEE
     SCOUT
   -Changed bullet colors depending on the class
-      
+  
+v0.1.5:
+  -Nerfed assassin:
+    Slower
+    20 bullet range -> 10 bullet range
+    
+  -Buffed melee and scout:
+    SCOUT:
+      Faster
+    MELEE:
+      Faster
