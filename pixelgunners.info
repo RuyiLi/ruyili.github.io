@@ -96,3 +96,6 @@ v0.1.7:
       4 damage
     TANK:
       3 damage
+  -Changed scout:
+    5 damage
+    Faster
