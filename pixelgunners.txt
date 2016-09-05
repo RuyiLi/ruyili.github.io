@@ -176,3 +176,17 @@ v0.2.4:
     Moves slower
     100 hp -> 90 hp
   -Added arrow key support
+  
+v0.2.5:
+  -Press shift to toggle autofire
+  -Hold space or click to shoot
+  -Changed Engineer:
+    ENGINEER:
+      10 range
+      1 damage
+      PASSIVE:
+        New equipment: Can now shoot.
+        Not so friendly fire: Can kill other turrets. 
+    TURRETS:
+      PASSIVE:
+        Uni wield?: Shoots only one bullet again.
