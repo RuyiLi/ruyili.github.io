@@ -175,3 +175,4 @@ v0.2.4:
   -Nerfed sprayer:
     Moves slower
     100 hp -> 90 hp
+  -Added arrow key support
