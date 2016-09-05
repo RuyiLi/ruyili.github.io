@@ -153,6 +153,7 @@ v0.2.2:
     -Buffed engineer and trishot:
       ENGINEER:
         Turrets now deal 4 damage instead of 3
+        Turrets shoot two bullets instead of one
       TRISHOT:
         3 damage
     
