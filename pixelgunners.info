@@ -121,3 +121,21 @@ v0.2.0:
     2 damage
     3 bullets
     2 speed steal
+    
+v0.2.1:
+  -Added engineer:
+    ENGINEER:
+      120 HP
+      PASSIVE:
+        Can't attack.
+        Places rotating turrets to attack for it.
+        Places turrets every 5 seconds.
+        
+    TURRET:
+      10 range
+      40 hp
+      3 damage
+      PASSIVE:
+        Despawns after 400 game ticks.
+        Not drainable by Vampire
+        Collecting health packs restores health to its owner, not the turret.
