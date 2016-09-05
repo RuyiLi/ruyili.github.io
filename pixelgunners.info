@@ -133,9 +133,18 @@ v0.2.1:
         
     TURRET:
       10 range
-      40 hp
+      40 HP
       3 damage
       PASSIVE:
         Despawns after 400 game ticks.
-        Not drainable by Vampire
+        Not drainable by Vampire.
         Collecting health packs restores health to its owner, not the turret.
+        
+v0.2.2:
+  -Added sprayer:
+    SPRAYER:
+      2 bullet range
+      100 HP
+      2 damage
+      PASSIVE:
+        Shoots 18 bullets in a circle around it.
