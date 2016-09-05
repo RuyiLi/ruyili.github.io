@@ -171,3 +171,4 @@ v0.2.4:
     160 HP
     PASSIVE:
       Regenerates 0.5 HP.
+  -Added kill counter that appears to the right of your name.
