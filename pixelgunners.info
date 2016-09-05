@@ -148,3 +148,13 @@ v0.2.2:
       2 damage
       PASSIVE:
         Shoots 18 bullets in a circle around it.
+        
+  v0.2.3:
+    -Buffed engineer and trishot:
+      ENGINEER:
+        Turrets now deal 4 damage instead of 3
+      TRISHOT:
+        3 damage
+    
+    -Fixed a bug where disconnecting as engineer would continue to place turrets
+    -Fixed a bug where pressing space as sprayer would teleport and heal it
