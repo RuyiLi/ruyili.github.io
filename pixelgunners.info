@@ -162,3 +162,12 @@ v0.2.2:
     
     -Fixed a bug where disconnecting as engineer would continue to place turrets
     -Fixed a bug where pressing space as sprayer would teleport and heal it
+    
+    
+v0.2.4:
+  -Added Juggernaut:
+    0.5 range
+    5 damage
+    160 HP
+    PASSIVE:
+      Regenerates 0.5 HP.
