@@ -207,11 +207,13 @@ v0.2.7:
   -Changed Engineer:
     ENGINEER:
       PASSIVE:
-        I hate waiting: No more delay between turrets.
+        I HATE WAITING: No more delay between turrets.
     TURRETS:
       PASSIVE:
-        Flank dual wield: Shoots two bullets, one from the front and one from the back.
+        FLANK DUAL WIELD: Shoots two bullets, one from the front and one from the back.
+        UNFRIENDLY FIRE: Turrets can now hurt each other.
+        DESTINY BOND: Turrets placed in the exact same spot will all die if one dies.
         
   -Nerfed trapper:
-    -Moves slower
-    -15 damage
+    Moves slower
+    15 damage
