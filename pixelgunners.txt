@@ -201,3 +201,17 @@ v0.2.6:
         Turret-o-matic: Click to place a turret with a maximum of 4. 2 second delay if player is at max turrets and one gets removed.
     TURRETS:
       300 despawn time
+
+v0.2.7:
+  -Game now sets random names if player does not choose a name
+  -Changed Engineer:
+    ENGINEER:
+      PASSIVE:
+        I hate waiting: No more delay between turrets.
+    TURRETS:
+      PASSIVE:
+        Flank dual wield: Shoots two bullets, one from the front and one from the back.
+        
+  -Nerfed trapper:
+    -Moves slower
+    -15 damage
