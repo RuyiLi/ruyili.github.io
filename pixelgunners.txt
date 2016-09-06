@@ -190,3 +190,14 @@ v0.2.5:
     TURRETS:
       PASSIVE:
         Uni wield?: Shoots only one bullet again.
+  
+v0.2.6:
+  -Removed shift, space, and mouse click events
+  -Added back autofire
+  -Changed Engineer:
+    ENGINEER:
+      PASSIVE:
+        Lost equipment: Cannot shoot.
+        Turret-o-matic: Click to place a turret with a maximum of 4. 2 second delay if player is at max turrets and one gets removed.
+    TURRETS:
+      300 despawn time
