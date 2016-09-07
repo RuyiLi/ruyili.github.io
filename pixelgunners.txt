@@ -217,3 +217,7 @@ v0.2.7:
   -Nerfed trapper:
     Moves slower
     15 damage
+
+v0.2.8:
+  -Added kill announcer
+  -Added "king", player with most kills.
