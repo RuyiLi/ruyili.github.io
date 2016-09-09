@@ -221,3 +221,9 @@ v0.2.7:
 v0.2.8:
   -Added kill announcer
   -Added "king", player with most kills.
+
+
+v0.2.9:
+  -Nerfed TriShot:
+    15 range -> 10 range
+  -New class, "electromancer" in beta
