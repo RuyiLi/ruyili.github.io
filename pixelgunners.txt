@@ -226,4 +226,18 @@ v0.2.8:
 v0.2.9:
   -Nerfed TriShot:
     15 range -> 10 range
-  -New class, "electromancer" in beta
+  -New class, ELECTROMANCER:
+    20 range
+    3 damage
+    100 HP
+    PASSIVE:
+      THUNDER: Once charge bar is full, the next attack will deal double damage and stun the target for 1 second.
+      STEALING YOUR THUNDER: Hit enemies to gain 2 charge.
+      ELECTRICAL ENGINEER: Hit turrets to gain 2 charge.
+  -Nerfed tank:
+    3 damage -> 2 damage
+  -Fixed Cryomancer permaslow bug
+  -Changed Cryomancer:
+    PASSIVE:
+      FROST: Hitting enemies slows them for 1 second
+      THAW: Enemies that remain in fire for more than one second will be freed.
