@@ -249,6 +249,5 @@ v0.3.0:
     100 hp
     10 damage
     PASSIVE:
-      SHARP: Attacks will go through enemies.
-      STICKY: Bullets will slow down upon hitting an enemy.
+      SHARP: Attacks will go through enemies. Deals more damage based on range.
       RELOAD: Click to shoot.
