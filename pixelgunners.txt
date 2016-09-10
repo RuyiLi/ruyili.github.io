@@ -241,3 +241,14 @@ v0.2.9:
     PASSIVE:
       FROST: Hitting enemies slows them for 1 second
       THAW: Enemies that remain in fire for more than one second will be freed.
+      
+v0.3.0:
+  -New class, SNIPER:
+    Hard class
+    25 range
+    100 hp
+    10 damage
+    PASSIVE:
+      SHARP: Attacks will go through enemies.
+      STICKY: Bullets will slow down upon hitting an enemy.
+      RELOAD: Click to shoot.
