@@ -245,9 +245,8 @@ v0.2.9:
 v0.3.0:
   -New class, SNIPER:
     Hard class
-    25 range
+    50 range
     100 hp
-    10 damage
     PASSIVE:
       SHARP: Attacks will go through enemies. Deals more damage based on range.
       RELOAD: Click to shoot.
