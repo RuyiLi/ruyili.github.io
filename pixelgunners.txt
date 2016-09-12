@@ -262,3 +262,6 @@ v0.3.1:
       MATH: Damage = kills + 2
   -Hard classes are now marked with a red cross in their icon.
   -Turret kills are counted as kills.
+  -Buffed engineer:
+    TURRETS:
+      40 hp -> 60 hp
