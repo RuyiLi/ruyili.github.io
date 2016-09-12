@@ -270,3 +270,9 @@ v0.3.1:
   -Changed Sniper:
     PASSIVE:
       RELOAD: Arrow keys are now used to fire.
+
+v0.3.2:
+  -Health packs now restore 20 hp instead of restoring to full health.
+  -Buffed electromancer:
+    20 range -> 25 range
+  
