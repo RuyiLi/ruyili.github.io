@@ -265,3 +265,5 @@ v0.3.1:
   -Buffed engineer:
     TURRETS:
       40 hp -> 60 hp
+  -Changed shooting system:
+    -Move with WASD, shoot with arrow keys.
