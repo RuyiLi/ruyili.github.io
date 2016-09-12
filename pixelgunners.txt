@@ -267,3 +267,6 @@ v0.3.1:
       40 hp -> 60 hp
   -Changed shooting system:
     -Move with WASD, shoot with arrow keys.
+  -Changed Sniper:
+    PASSIVE:
+      RELOAD: Arrow keys are now used to fire.
