@@ -259,5 +259,6 @@ v0.3.1:
     100 hp
     PASSIVE:
       TROPHIES: Deals damage based on kills.
-      MATH: Damage = kills x 2 + 1
+      MATH: Damage = kills + 2
   -Hard classes are now marked with a red cross in their icon.
+  -Turret kills are counted as kills.
