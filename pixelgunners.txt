@@ -275,4 +275,12 @@ v0.3.2:
   -Health packs now restore 20 hp instead of restoring to full health.
   -Buffed electromancer:
     20 range -> 25 range
+    Stun duration: 1 second -> 1.5 seconds
+  -Health packs now place every 5 seconds
+  -New class, PSYCHOMANCER:
+    20 range
+    3 damage
+    100 hp
+    PASSIVE:
+      CONFUSE RAY: Bullets confuse enemies, making them move in the opposite direction for 1 second.
   
