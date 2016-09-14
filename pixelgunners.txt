@@ -285,6 +285,7 @@ v0.3.2:
       CONFUSE RAY: Bullets confuse enemies, making them move in the opposite direction for 1 second.
 
 v0.3.3:
+  -Added instructions
   -New class, TRAILER:
     90 bullet time
     6 damage
