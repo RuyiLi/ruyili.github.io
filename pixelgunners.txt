@@ -283,4 +283,12 @@ v0.3.2:
     100 hp
     PASSIVE:
       CONFUSE RAY: Bullets confuse enemies, making them move in the opposite direction for 1 second.
+
+v0.3.3:
+  -New class, TRAILER:
+    90 bullet time
+    6 damage
+    100 hp
+    PASSIVE:
+      TRAIL: Creates a slow-moving trail of bullets that move in the direction of the player.
   
