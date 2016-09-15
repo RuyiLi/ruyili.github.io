@@ -292,4 +292,7 @@ v0.3.3:
     100 hp
     PASSIVE:
       TRAIL: Creates a slow-moving trail of bullets that move in the direction of the player.
+  -Nerfed sniper:
+    50 range -> 30 range
+    Damage multiplier: 3 -> 2
   
