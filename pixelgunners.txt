@@ -295,4 +295,5 @@ v0.3.3:
   -Nerfed sniper:
     50 range -> 30 range
     Damage multiplier: 3 -> 0.5
+    Reload time: 500ms
   
