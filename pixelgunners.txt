@@ -296,4 +296,15 @@ v0.3.3:
     50 range -> 30 range
     Damage multiplier: 3 -> 0.5
     Reload time: 500ms
+    
+v0.3.4:
+  -Disabled Psychomancer
+  -Increased Juggernaut healing from 0.5 to 1
+  -Increased Juggernaut range from 0.5 to 1
+  -New class, SPINNER:
+    15 bullet range
+    2 damage
+    120 hp
+    PASSIVE:
+      TRIPLE TURRET: Shoots in a spinning motion, three bullets at a time.
   
