@@ -311,5 +311,5 @@ v0.3.4:
     13 bullet range
     120 hp
     PASSIVE:
-      PICK A CARD: Damage is dealt randomly from a range from 1 to 8,
+      PICK A CARD: Damage is dealt randomly from a range from 1 to 8.
   
