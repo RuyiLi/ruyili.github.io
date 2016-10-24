@@ -303,7 +303,7 @@ v0.3.4:
   -Increased Juggernaut range from 0.5 to 1
   -New class, SPINNER:
     15 bullet range
-    2 damage
+    3 damage
     120 hp
     PASSIVE:
       TRIPLE TURRET: Shoots in a spinning motion, three bullets at a time.
