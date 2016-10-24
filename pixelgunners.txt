@@ -302,9 +302,14 @@ v0.3.4:
   -Increased Juggernaut healing from 0.5 to 1
   -Increased Juggernaut range from 0.5 to 1
   -New class, SPINNER:
-    15 bullet range
+    10 bullet range
     3 damage
     120 hp
     PASSIVE:
       TRIPLE TURRET: Shoots in a spinning motion, three bullets at a time.
+  -New class, GAMBLER:
+    13 bullet range
+    120 hp
+    PASSIVE:
+      PICK A CARD: Damage is dealt randomly from a range from 1 to 8,
   
