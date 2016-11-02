@@ -7,7 +7,7 @@ function magic(){
     hex = document.getElementById("colorInput").value;
     dia = parseInt(document.getElementById("radInput").value) * 2;
     rad = parseInt(document.getElementById("radInput").value);
-    dur = parseInt(document.getElementById("durInput").value);
+    dur = parseFloat(document.getElementById("durInput").value);
     x = parseInt(document.getElementById("xInput").value);
     y = parseInt(document.getElementById("yInput").value);
     endless = document.getElementById('infiniteCheck').checked;
