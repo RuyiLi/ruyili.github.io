@@ -321,3 +321,7 @@ v0.3.5:
     PASSIVE:
       TEEMO: Inflicts poison damage over time.
   -Death message now displays your killer
+  -Nerfed Ranger:
+    4 damage -> 3 damage
+  -Buffed Sniper:
+    40 range -> 45 range
