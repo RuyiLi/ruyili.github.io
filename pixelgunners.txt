@@ -325,3 +325,9 @@ v0.3.5:
     4 damage -> 3 damage
   -Buffed Sniper:
     40 range -> 45 range
+  -Added Aeromancer:
+    25 bullet range
+    3 damage
+    120 hp
+    PASSIVE:
+      FLOW: Once your charge bar reaches 100, your speed doubles.
