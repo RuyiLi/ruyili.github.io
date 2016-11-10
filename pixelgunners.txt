@@ -337,3 +337,9 @@ v0.3.6:
     Confuse now only has effect upon collision with bullets.
   -Nerfed Poisoner:
     Poison lasts 240 ticks, dealing 2 damage every 30 ticks.
+  -New class, Obliterator:
+    120 HP
+    3 DMG
+    15 range
+    PASSIVE:
+      HITBOX: Shoots large bullets.
