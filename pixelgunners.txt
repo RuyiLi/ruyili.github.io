@@ -331,3 +331,9 @@ v0.3.5:
     120 hp
     PASSIVE:
       FLOW: Once your charge bar reaches 100, your speed doubles.
+
+v0.3.6:
+  -Fixed Psychomancer, re-added:
+    Confuse now only has effect upon collision with bullets.
+  -Nerfed Poisoner:
+    Poison lasts 240 ticks, dealing 2 damage every 30 ticks.
