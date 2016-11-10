@@ -343,3 +343,9 @@ v0.3.6:
     15 range
     PASSIVE:
       HITBOX: Shoots large bullets.
+  -New class, Disabler:
+    100 HP
+    2 DMG
+    20 range
+    PASSIVE:
+      QUIEN: Attacks disable enemies, rendering them unable to shoot.
