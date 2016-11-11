@@ -349,3 +349,20 @@ v0.3.6:
     20 range
     PASSIVE:
       QUIEN: Attacks disable enemies, rendering them unable to shoot.
+      
+v0.3.7
+  -Health pack spawn rate changed from 6 seconds to 8 seconds
+  -Trapper now moves faster
+  -New class, Crusader:
+    Range: 10
+    HP: 80
+    Shield HP: 120
+    DMG: 2
+    Speed: 4
+    Has a regenerating shield. When the shield breaks, it will not regenerate.
+  -New class, Slimer:
+    Range: 30
+    HP: 120
+    DMG: 1
+    Speed: 5
+    Bullets slow down upon collision and pass throught enemies."
