@@ -366,3 +366,19 @@ v0.3.7
     DMG: 1
     Speed: 5
     Bullets slow down upon collision and pass throught enemies."
+    
+v0.3.8:
+  -Increased maximum name length
+  -Removed Slimer
+  -Added Mimicker:
+    Range: 10
+    HP: 100
+    DMG: 1
+    PASSIVE:
+      DITTO: Transforms into whatever class it hits.
+  -Added Teleporter:
+    Range: 10
+    HP: 100
+    DMG: 1
+    PASSIVE:
+      TELEPORT: Click to teleport. 5 second cooldown.
