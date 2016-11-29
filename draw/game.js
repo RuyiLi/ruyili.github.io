@@ -13,9 +13,9 @@ var drawing = true;
 
 var maze = [];
 
-for(var i = 0; i < 50; i++){
+for(var i = 0; i < 51; i++){
 	maze[i] = "";
-	for(var j = 0; j < 50; j++){
+	for(var j = 0; j < 51; j++){
 		maze[i] += "?"
 	}
 }
@@ -23,12 +23,13 @@ for(var i = 0; i < 50; i++){
 var draw = function(){
 	var gameText = $("#game").text(maze.toString()).text()
 	$('#game').html(gameText.replaceAll(",", '<br/>'));
+	$("#pos").text("x: " + x + ", y: " + y)
 }
 
 var clear = function(){
-	for(var i = 0; i < 50; i++){
+	for(var i = 0; i < 51; i++){
 		maze[i] = "";
-		for(var j = 0; j < 50; j++){
+		for(var j = 0; j < 51; j++){
 			maze[i] += "?"
 		}
 	}
@@ -48,11 +49,9 @@ document.onkeydown = function(e){
 		}else{
 			$("#mode").text("Current mode: ?");
 		}
-	}
-	if(e.keyCode == 16){
+	}else if(e.keyCode == 16){
 		clear();
-	}
-	if(e.keyCode == 68 && x < 49){
+	}else if(e.keyCode == 68 && x < 50){
 		x += 1;
 		if(drawing){
 			maze[y] = maze[y].replaceAt(x - 1, "#")
@@ -73,7 +72,7 @@ document.onkeydown = function(e){
 		}else{
 			maze[y + 1] = maze[y + 1].replaceAt(x, "?")
 		}
-	}else if(e.keyCode == 83 && y < 49){
+	}else if(e.keyCode == 83 && y < 50){
 		y += 1;
 		if(drawing){
 			maze[y - 1] = maze[y - 1].replaceAt(x, "#")
