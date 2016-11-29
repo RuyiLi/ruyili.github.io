@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			vertical-align: middle;
+			background-color: black;
+		}
+		
+		*{
+			font-family: Courier;
+			font-size: 12px;
+			color: white;
+		}
+		
+		#game{
+			line-height: 12px;
+			letter-spacing: 6px;
+			position: absolute;
+			top: 1px;
+			left: 30%;
+		}
+		
+		#mode{
+			letter-spacing: 1px;
+		}
+		
+		#clear{
+			background-color: transparent;
+			outline: nonde;
+			border: 3px solid white;
+			cursor: pointer;
+		}
+		
+		#clear:hover{
+			background-color: white;
+		}
+		
+		#stuff{
+			float: left;
+			width: 20%;
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="stuff">
+		<p>Use WASD to move the drawing circle. Use space to switch between question mark or pound sign mode. Press the clear button or press left shift to clear.</p>
+		<p id="mode">Current mode: #</p>
+		<button id="clear">Clear</button>
+	</div>
+	<p id="game"></p>
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="game.js" type="text/javascript"></script>
+</body>
+
+</html>
