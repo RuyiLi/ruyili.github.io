@@ -53,6 +53,34 @@
 			font-size: 12px;
 			color: white;
 		}
+		
+		
+		h3{
+			font-size: 12px;
+			color: white;
+		}
+		
+		h3, input{
+			display: inline-block;
+		}
+		
+		input[type="number"]{
+			width: 40px;
+		}
+		
+		input[type="button"]{
+			background-color: transparent;
+			outline: none;
+			border: 3px solid white;
+			cursor: pointer;
+			font-size: 12px;
+			color: white;
+		}
+		
+		input[type="button"]:hover{
+			background-color: white;
+		}
+		
 	</style>
 </head>
 <body>
@@ -63,6 +91,9 @@
 		<button id="copy" onclick="this.blur()" tabIndex="-1">Copy</button>
 		<button id="hide" onclick="this.blur()" tabIndex="-1">Hide Brush</button>
 		<h2 id="pos"></h2>
+		<h3>Width:  </h3><input type="number" id="w" value="50" min="1">
+		<h3>Height:  </h3><input type="number" id="h" value="50" min="1">
+		<input type="button" onclick="this.blur()" id="resize" value="Resize">
 	</div>
 	<p id="game"></p>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>

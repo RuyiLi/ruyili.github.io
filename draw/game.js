@@ -9,14 +9,16 @@ String.prototype.replaceAt = function(index, character) {
 
 var x = 0, y = 0;
 
+var w = 50, h = 50;
+
 var drawing = true;
 var hide = false;
 
 var maze = [];
 
-for(var i = 0; i < 51; i++){
+for(var i = 0; i < h + 1; i++){
 	maze[i] = "";
-	for(var j = 0; j < 51; j++){
+	for(var j = 0; j < w + 1; j++){
 		maze[i] += "▓"
 	}
 }
@@ -28,12 +30,14 @@ var draw = function(){
 }
 
 var clear = function(){
-	for(var i = 0; i < 51; i++){
+	maze = []
+	for(var i = 0; i < h + 1; i++){
 		maze[i] = "";
-		for(var j = 0; j < 51; j++){
+		for(var j = 0; j < w + 1; j++){
 			maze[i] += "▓"
 		}
 	}
+	x = 0, y = 0;
 	maze[y] = maze[y].replaceAt(x, "O")
 	draw();
 	return "Cleared"
@@ -43,6 +47,20 @@ $("#clear").on("click", function(){
 	clear()
 	blur();
 });
+
+$("#resize").on("click", function(){
+	h = parseInt($("#h").val())
+	w = parseInt($("#w").val())
+	if(h < 0){
+		h = 0
+	}
+	
+	if(w < 0){
+		w = 0
+	}
+	clear();
+	blur();
+})
 
 $("#hide").on("click", function(){
 	if(!hide){
