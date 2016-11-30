@@ -49,8 +49,8 @@ $("#clear").on("click", function(){
 });
 
 $("#resize").on("click", function(){
-	h = parseInt($("#h").val())
-	w = parseInt($("#w").val())
+	h = parseInt($("#h").val()) - 1
+	w = parseInt($("#w").val()) - 1
 	if(h < 0){
 		h = 0
 	}
