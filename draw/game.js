@@ -104,7 +104,7 @@ document.onkeydown = function(e){
 	}else if(e.keyCode == 16){
 		clear();
 		
-	}else if(e.keyCode == 68 && x < 50){
+	}else if(e.keyCode == 68 && x < w){
 		x += 1;
 		if(drawing){
 			maze[y] = maze[y].replaceAt(x - 1, "█")
@@ -134,7 +134,7 @@ document.onkeydown = function(e){
 		hide = false;
 		$("#hide").text("Hide Brush")
 		
-	}else if(e.keyCode == 83 && y < 50){
+	}else if(e.keyCode == 83 && y < h){
 		y += 1;
 		if(drawing){
 			maze[y - 1] = maze[y - 1].replaceAt(x, "█")
