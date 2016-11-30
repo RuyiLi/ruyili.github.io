@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>D.R.A.W</title>
+	<meta charset="UTF-8">
 	<meta name="description" content="An online drawing tool.">
 	<meta name="keywords" content="draw,wasd,move,brush">
 	<meta name="author" content="Ruyi Li">
@@ -12,13 +14,13 @@
 		
 		*{
 			font-family: Courier;
-			font-size: 12px;
-			color: white;
+			font-size: 10px;
+			color: #5e5e5e;
 		}
 		
 		#game{
 			line-height: 12px;
-			letter-spacing: 6px;
+			letter-spacing: 7px;
 			position: absolute;
 			top: 1px;
 			left: 30%;
@@ -28,14 +30,16 @@
 			letter-spacing: 1px;
 		}
 		
-		#clear{
+		button{
 			background-color: transparent;
-			outline: nonde;
+			outline: none;
 			border: 3px solid white;
 			cursor: pointer;
+			font-size: 12px;
+			color: white;
 		}
 		
-		#clear:hover{
+		button:hover{
 			background-color: white;
 		}
 		
@@ -44,14 +48,21 @@
 			width: 20%;
 			text-align: right;
 		}
+		
+		h2{
+			font-size: 12px;
+			color: white;
+		}
 	</style>
 </head>
 <body>
 	<div id="stuff">
-		<p>Use WASD to move the drawing circle. Use space to switch between question mark or pound sign mode. Press the clear button or press left shift to clear.</p>
-		<p id="mode">Current mode: #</p>
-		<button id="clear">Clear</button>
-		<p id="pos"></p>
+		<h2>Use WASD to move the drawing circle. Use space to switch between question mark or pound sign mode. Press the clear button or press left shift to clear.</h2>
+		<h2 id="mode">Current mode: █</h2>
+		<button id="clear" onclick="this.blur()" tabIndex="-1">Clear</button>
+		<button id="copy" onclick="this.blur()" tabIndex="-1">Copy</button>
+		<button id="hide" onclick="this.blur()" tabIndex="-1">Hide Brush</button>
+		<h2 id="pos"></h2>
 	</div>
 	<p id="game"></p>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
