@@ -1,0 +1,120 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<style>
+		*{
+			font-family: 'Raleway', sans-serif;
+		}
+		
+		h1{
+			color: white;
+			font-size: 60px;
+		}
+		
+		body{
+			text-align: center;
+			background-color: #0098ca;
+		}
+		
+		#container{
+			background-color: #28caff;
+			width: 50%;
+			margin: auto;
+			border-bottom: 5px solid #1cb4e8;
+		}
+		
+		input{
+			width: 150px;
+			padding: 2px 5px;
+			border-style: solid;
+			border: 0;
+			transition: .1s ease-in-out;
+		}
+
+		input:focus{
+			border-bottom: 5px solid #1cb4e8;
+		}
+		
+		p{
+			 font-size: 16px;
+			 color: white;
+		}
+		
+		p, input[type="number"]{
+			display: inline-block;
+		}
+		
+		#titleText{
+			width: 100%;
+			background-color: #09baf5;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		h2{
+			color: white;
+		}
+		
+		hr{
+			border: 0;
+			height: 1px;
+			background-image: linear-gradient(to right, #28caff, white, #28caff);
+		}
+		
+		#result{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		
+		button{
+			padding: 5px 10px;
+			background-color: #5cd6ff;
+			border: 0;
+			border-bottom: 5px solid #45c0e8;
+			cursor: pointer;
+			color: white;
+		}
+		
+		button:active{
+			border: 0;
+			transform: translate(0, 5px);
+			margin-bottom: 5px;
+		}
+		
+	</style>
+</head>
+<body>
+	<br>
+	<h1>LCM Calculator</h1>
+	<br>
+	<div id="container">
+		<div id="titleText">
+			<h2>Calculate the LCM of: </h2>
+		</div>
+		<input type="text" id="one"></input>
+		<p> and </p>
+		<input type="text" id="two"></input>
+		<button id="calc" onclick="calculate()">Calculate</button>
+		<hr>
+		<div id="result">
+			<p id="res"></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gcd = function(a, b) {
+			return !b ? a : gcd(b, a % b);
+		}
+
+		var lcm = function(a, b) {
+			return (a * b) / gcd(a, b);   
+		}
+		
+		var calculate = function(){
+			var leastCommonMultiple = lcm(parseInt(document.getElementById("one").value), parseInt(document.getElementById("two").value))
+			if(!Number.isInteger(leastCommonMultiple)){	
+				document.getElementById("res").innerHTML = "Please enter a valid integer!";
+			}else{
+				document.getElementById("res").innerHTML = "The Least Common Mulitple of <b>" + document.getElementById("one").value + "</b> and <b>" + document.getElementById("two").value + "</b> is <i>" + leastCommonMultiple + "</i>";
+			}
+		}
+	</script>
+</body>
