@@ -96,8 +96,11 @@
 		<button id="calc" onclick="calculate()">Calculate</button>
 		<hr>
 		<div id="result">
-			<p id="res"></p>
+			<p id="res">The LCM will show up here.</p>
 		</div>
+		<hr>
+		<p>Finding the LCM using the Ladder Method:</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/3W8SeYgZcMo" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<script type="text/javascript">
 		var gcd = function(a, b) {
@@ -109,10 +112,12 @@
 		}
 		
 		var calculate = function(){
-			var leastCommonMultiple = lcm(parseInt(document.getElementById("one").value), parseInt(document.getElementById("two").value))
-			if(!Number.isInteger(leastCommonMultiple)){	
+			var one = document.getElementById("one");
+			var two = document.getElementById("two");
+			if(one.value.toLowerCase().match(/[a-z]/i) || two.value.toLowerCase().match(/[a-z]/i)){	
 				document.getElementById("res").innerHTML = "Please enter a valid integer!";
 			}else{
+				var leastCommonMultiple = lcm(parseInt(document.getElementById("one").value), parseInt(document.getElementById("two").value));
 				document.getElementById("res").innerHTML = "The Least Common Mulitple of <b>" + document.getElementById("one").value + "</b> and <b>" + document.getElementById("two").value + "</b> is <i>" + leastCommonMultiple + "</i>";
 			}
 		}
