@@ -21,4 +21,4 @@ A Tower Defense game in which you possess the ability to possess your turrets!
 ### Pixelgunners
 An online multiplayer game where you can destroy others with pixels! Choose from over 25 classes, each with its own unique abilities.
 <iframe src="https://ruyili.github.io/jekyll-slideshow/slides/pixelgunners" scrolling="no" width="400px" height="330px" style="border: none;"></iframe>
-**[Click this link to play!](http://pixgunners.herokuapp.com/y)**.
+**[Click this link to play!](http://pixgunners.herokuapp.com/)**
