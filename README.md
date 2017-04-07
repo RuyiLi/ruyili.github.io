@@ -6,7 +6,7 @@ Welcome! This is a list of all the projects that I've ever worked on.
 
 ### Possession Party
 A Tower Defense game in which you possess the ability to possess your turrets!
-<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/possessionparty" width="1366px" height="768px" style="border: none;"></iframe>
+<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/possessionparty" width="400px" height="275px" style="border: none;"></iframe>
 [For more information and a download link, click here](https://lusid.itch.io/possession-party).
 
 **Bold** and _Italic_ and `Code` text
