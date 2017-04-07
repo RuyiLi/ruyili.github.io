@@ -27,5 +27,12 @@ An online multiplayer game where you can destroy others with pixels! Choose from
 
 ### Craftrivia
 A Minecraft quiz game for Android where you can put your crafting skills to the test. How much do you know about your Minecraft recipes?
-<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/craftrivia" scrolling="no" width="225px" height="330px" style="border: none;"></iframe>
+<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/craftrivia" scrolling="no" width="225px" height="375px" style="border: none;"></iframe>
 **[For more information and a download link, click here.](https://play.google.com/store/apps/details?id=com.lusiddev.craftmything)**
+
+<hr style="border-top: 1px solid black; border-bottom: 1px solid black; padding: .5px; background-color: transparent;">
+
+### RGB
+A reaction-speed game about colors.
+<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/craftrivia" scrolling="no" width="225px" height="350px" style="border: none;"></iframe>
+**[For more information and a download link, click here.](http://pixelminigames.github.io/rgb)**
