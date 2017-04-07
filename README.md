@@ -34,5 +34,5 @@ A Minecraft quiz game for Android where you can put your crafting skills to the 
 
 ### RGB
 A reaction-speed game about colors.
-<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/craftrivia" scrolling="no" width="225px" height="350px" style="border: none;"></iframe>
+<iframe src="https://ruyili.github.io/jekyll-slideshow/slides/rgb" scrolling="no" width="225px" height="350px" style="border: none;"></iframe>
 **[For more information and a download link, click here.](http://pixelminigames.github.io/rgb)**
