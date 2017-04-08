@@ -35,4 +35,4 @@ A Minecraft quiz game for Android where you can put your crafting skills to the 
 ### RGB
 Match the color of the bars coming down to survive and get the highest score.
 <iframe src="https://ruyili.github.io/jekyll-slideshow/slides/rgb" scrolling="no" width="100" height="250px" style="border: none;"></iframe>
-**[For more information and a download link, click here.](http://pixelminigames.github.io/rgb)**
+**[Click here to play.](http://pixelminigames.github.io/rgb)**
