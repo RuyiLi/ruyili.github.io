@@ -37,6 +37,8 @@ Match the color of the bars coming down to survive and get the highest score.
 <iframe src="https://ruyili.github.io/jekyll-slideshow/slides/rgb" scrolling="no" width="100px" height="250px" style="border: none;"></iframe>
 **[Click here to play.](http://pixelminigames.github.io/rgb)**
 
+<hr style="border-top: 1px solid black; border-bottom: 1px solid black; padding: .5px; background-color: transparent;">
+
 ### Disco Ball EX
 An Undertale fangame featuring one of Mettatton's attacks.
 <iframe src="https://ruyili.github.io/jekyll-slideshow/slides/dbex" scrolling="no" width="200px" height="200px" style="border: none;"></iframe>
