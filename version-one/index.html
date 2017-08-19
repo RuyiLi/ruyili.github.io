@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ruyi Li</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="responsiveslides.min.js"></script>
+	<script type="text/javascript">
+  		$(function() {
+    		$(".rslides").responsiveSlides({
+    			auto: true,
+  				speed: 500,
+  				timeout: 2500,
+  				maxwidth: 150
+    		});
+  		});
+	</script>
+</head>
+
+<body>
+	<div id="menu">
+		<ul>
+			<li id="meNav">
+				<a class="nava" href="#titleDiv">Ruyi Li</a>
+			</li>
+			
+			<li id="gameNav">
+				<a class="nava" href="#games">My Games</a>
+			</li>		
+			
+			<li id="otherNav">
+				<a class="nava" href="#other">Other Projects</a>
+			</li>		
+		</ul>
+	</div>
+	
+	<div id="titleDiv">
+		<h1 id="title">Ruyi Li</h1>
+		<button id="gitbtn" onclick="window.open('https://github.com/ruyili', '_blank');" title="My github page"></button>
+		<button id="patbtn" onclick="window.open('https://www.patreon.com/user?u=2933535&ty=h&u=2933535', '_blank');" title="My Patreon"></button>
+	</div>
+	<div id="games">
+		<h2>My Games</h2>
+		<div class="row">		
+			<div class="col">
+				<b>Disco Ball EX</b>		
+				<h3>An <a id="underlink" href="http://undertale.com/">Undertale</a> fangame where you face off against one of Mettaton's attacks.<br>Use Z or the mouse to shoot; if you are on mobile, just tap the screen.</h3>	
+				<ul class="rslides">
+  					<li onclick="window.open('https://ruyili.github.io/disco-ball-ex', '_blank');"><img src="dbex1.png"alt=""></li>
+  					<li onclick="window.open('https://ruyili.github.io/disco-ball-ex', '_blank');"><img src="dbex2.png"alt=""></li>
+				</ul>
+				
+			</div>		
+			<div class="col">
+				<b>RGB</b>		
+				<h3>A game about colors. Hold left to turn red, right to turn blue, both to turn purple, and nothing to turn green.</h3>	
+				<ul class="rslides">
+  					<li onclick="window.open('https://ruyili.github.io/rgb', '_blank');"><img src="rgb1.png"alt=""></li>
+  					<li onclick="window.open('https://ruyili.github.io/rgb', '_blank');"><img src="rgb2.png"alt=""></li>
+				</ul>
+				
+			</div>
+			<div class="col">
+				<b>Total Pawnage!</b>		
+				<h3>Chess with only pawns!</h3>	
+				<ul class="rslides">
+  					<li onclick="window.open('https://ruyili.github.io/total-pawnage', '_blank');"><img src="tp1.png" alt=""></li>
+  					<li onclick="window.open('https://ruyili.github.io/total-pawnage', '_blank');"><img src="tp2.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="col">
+				<b>Royal Flush</b>		
+				<h3>All queens on board.</h3>	
+				<ul class="rslides">
+  					<li onclick="window.open('https://ruyili.github.io/royal-flush', '_blank');"><img src="rf1.png" alt=""></li>
+  					<li onclick="window.open('https://ruyili.github.io/royal-flush', '_blank');"><img src="rf2.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">		
+			<div class="col">
+				<b>Warriors of Paint</b>		
+				<h3>Draw in the drawing board to destroy your enemies! Find out how to play <a id="underlink" href="https://github.com/RuyiLi/ruyili.github.io/blob/master/wop/README.md">here</a>.</h3>	
+				<ul class="rslides">
+  					<li onclick="window.open('http://ruyili.github.io/wop/', '_blank');"><img src="wop.png"alt=""></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div id="other">
+		<h2>My Other Projects</h2>
+		<div class="row">		
+			<div class="col">
+				<b>CSS Minifier</b>		
+				<h3 id="specialHThree">An online tool to compress CSS files.</h3>	
+				<button class="bigred" onclick="window.open('https://ruyili.github.io/css-minifier', '_blank');">Visit</button>
+				
+			</div>		
+			<div class="col">
+				<b>CSS Shockwave, Please!</b>		
+				<h3 id="specialHThree">Create shockwaves, or "circle pops", with CSS.</h3>	
+				<button class="bigred" onclick="window.open('https://ruyili.github.io/cssshockwaveplease', '_blank');">Visit</button>
+				
+			</div>		
+			<div class="col">
+				<b>GREETINGS, HUMAN!</b>		
+				<h3 id="specialHThree">A tool to create an Undertale logo; perfect for AUs.</h3>	
+				<button class="bigred" onclick="window.open('https://ruyili.github.io/greetings-human', '_blank');">Visit</button>
+				
+			</div>	
+		</div>
+		<div class="row">	
+			<div class="col">
+				<b>URL to txt</b>		
+				<h3 id="specialHThree">A Java program that scrapes the HTML of a website and puts the contents into a .txt file.</h3>	
+				<button class="bigred" onclick="window.open('https://github.com/RuyiLi/url-to-txt', '_blank');">Visit</button>
+				
+			</div>			
+			<div class="col">
+				<b>Image Converter</b>		
+				<h3 id="specialHThree">A Java program that converts a png file to a jpg.</h3>	
+				<button class="bigred" onclick="window.open('https://github.com/RuyiLi/image-converter', '_blank');">Visit</button>
+				
+			</div>			
+			<div class="col">
+				<b>Easy Bar</b>		
+				<h3 id="specialHThree">Easily create bar graphs with this Java program.</h3>	
+				<button class="bigred" onclick="window.open('https://github.com/RuyiLi/easy-bar', '_blank');">Visit</button>
+				
+			</div>	
+		</div>	
+		<div class="row">
+			<div class="col">
+				<b>Zippy Jar</b>		
+				<h3 id="specialHThree">A Java program that allows you to convert your jar files to zip for easy project exploration.</h3>	
+				<button class="bigred" onclick="window.open('https://github.com/RuyiLi/zippy-jar', '_blank');">Visit</button>
+				
+			</div>	
+			<div class="col">
+				<b>CSS Experiments</b>		
+				<h3 id="specialHThree">Experimental CSS page.</h3>	
+				<button class="bigred" onclick="window.open('https://ruyili.github.io/css-experiments', '_blank');">Visit</button>
+				
+			</div>	
+		</div>
+		
+	</div>
+
+</body>
+
+</html>
