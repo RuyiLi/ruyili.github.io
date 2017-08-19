@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ruyi Li</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+            *{
+                font-family: 'Quicksand', sans-serif;
+                color: #e5e5e5;
+            }
+
+            div{
+                text-align: center;
+            }
+
+            #header, #content{
+                margin: auto;
+                margin-top: 20px;
+            }
+
+            h1{
+                font-size: 6rem;
+                margin: 0.3rem;
+            }
+
+            h3{
+                margin: 0;
+            }
+
+            h4{
+                font-size: 0.75rem;
+            }
+
+            #links a{
+                text-decoration-color: rgba(0, 0, 0, 0) !important;
+                font-size: 1.2rem;
+            }
+
+            html, body{
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                overflow-x: hidden;
+                background: url('img/1.jpg') center center / cover no-repeat fixed;
+            }
+
+            ::selection{
+                color: rgba(232, 232, 232, 0.5);
+                background-color: rgba(89, 122, 175, 0.6);
+            }
+
+            a{
+                text-decoration-color: rgba(232, 232, 232, 0.5);
+            }
+
+            .fa-github:hover{
+                color: #bababa;
+            }
+
+            .fa-youtube-play:hover{
+                color: #db190f;
+            }
+
+            .fa-twitter:hover{
+                color: #3acaff;
+            }
+
+            .card{
+                margin: auto;
+                width: 280px;
+                height: 400px;
+                background: #f2f2f2;
+                background: -webkit-linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
+                background: -moz-linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
+                background: -o-linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
+                background: linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
+                border: 1px solid #f9f9f9;
+                padding: 0 20px;
+                border-radius: 10px;
+                transition: .1s;
+            }
+
+            .card img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                position: relative;
+                top: 75px;
+                border: 2px solid #ddd;
+                transition: .1s ease-in-out;
+                background-color: #ededed;
+            }
+
+            .card img:hover{
+                border-radius: 10px;
+            }
+
+            .card h2, .card p{
+                position: relative;
+                top: 50px;
+                color: #303030 !important;
+            }
+
+            .card a{
+                position: relative;
+                top: 75px;
+                color: #0c62b7;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .card a:hover:after{
+                content: ' >>';
+            }
+
+            .card:hover{
+                box-shadow: 0 0 10px 2px #f9f9f9;
+            }
+
+            .dark{
+                color: #262626;
+            }
+
+            hr{
+                border: 0;
+                height: 1px;
+                margin-top: 45px;
+                background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
+                background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
+                background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
+                background-image: linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
+            }
+
+            h2{
+                font-size: 2rem;
+                font-weight: 400;
+            }
+
+            #popup{
+                transform: scale(0, 0);
+                position: fixed;
+                top: calc(50% - 200px);
+                left: calc(50% - 140px);
+                animation-duration: .6s;
+                animation-fill-mode: forwards;
+            }
+
+            #cover{
+                transform: scale(0, 0);
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                left: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                animation-duration: .6s;
+                animation-fill-mode: forwards;
+            }
+
+            table{
+                width: 75%;
+                margin: auto;
+            }
+
+            tr td:not(:last-child){
+                border-right: 1px dotted rgba(255, 255, 255, 0.5);
+            }
+
+            table{
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 5px;
+            }
+
+            #close{
+                position: fixed;
+                right: 0;
+                top: 0;
+                background: none;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                font-size: 2rem;
+                display: none;
+            }
+
+            @keyframes fill{
+                from{
+                    transform: scale(0, 0);
+                }
+                to{
+                    transform: scale(1, 1);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1> ruyi li </h1>
+
+            <div id="links">
+                <a href="https://github.com/ruyiLi/" title="GitHub">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCl1ZeIbx3ygJTjfC2DfkV7g/videos" title="YouTube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/lusiddev" title="Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </div>
+            <h3>〈lusiddev〉</h3>
+            <h4>image courtesy of <a id="imageProvider" href="https://wall.alphacoders.com/">wallpaper abyss</a></h4>
+        </div>
+        <hr>
+        <div id="content">
+            <h2>projects</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><a class="project">Wavering Shades</a></td>
+                        <td><a class="project">Craftrivia</a>
+                        <td><a class="project">Possession Party</a>
+                        <td><a class="project">Pixelgunners</a>
+                        <td><a class="project">Astral Drifters</a>
+                    </tr>
+                    <tr>
+                        <td><a class="project">Pulsewave</a>
+                        <td><a class="project">RGB</a>
+                        <td><a class="project">Disco Ball EX</a>
+                        <td><a class="project">DRAW</a>
+                        <td><a class="project">Warriors Of Paint</a>
+                    </tr>
+                    <tr>
+                        <td><a class="project">Triviamaster</a>
+                        <td><a class="project">RGB</a>
+                        <td><a class="project">Disco Ball EX</a>
+                        <td><a class="project">DRAW</a>
+                        <td><a class="project">Warriors Of Paint</a>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="cover">
+            <div id="popup" class="card">
+                <img id="cardImage">
+                <h2 id="cardTitle">Card Name</h2>
+                <p id="cardDesc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <a id="cardLink" href="#">Learn More</a>
+            </div>
+            <button id="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+        <script>
+            var _0x51f4=["\x73\x63\x72\x69\x70\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x6F\x6F\x67\x6C\x65\x2D\x61\x6E\x61\x6C\x79\x74\x69\x63\x73\x2E\x63\x6F\x6D\x2F\x61\x6E\x61\x6C\x79\x74\x69\x63\x73\x2E\x6A\x73","\x67\x61","\x47\x6F\x6F\x67\x6C\x65\x41\x6E\x61\x6C\x79\x74\x69\x63\x73\x4F\x62\x6A\x65\x63\x74","\x70\x75\x73\x68","\x71","\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x61\x73\x79\x6E\x63","\x73\x72\x63","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x63\x72\x65\x61\x74\x65","\x55\x41\x2D\x31\x30\x34\x33\x32\x31\x39\x39\x32\x2D\x31","\x61\x75\x74\x6F","\x73\x65\x6E\x64","\x70\x61\x67\x65\x76\x69\x65\x77"];(function(_0x6219x1,_0x6219x2,_0x6219x3,_0x6219x4,_0x6219x5,_0x6219x6,_0x6219x7){_0x6219x1[_0x51f4[3]]= _0x6219x5;_0x6219x1[_0x6219x5]= _0x6219x1[_0x6219x5]|| function(){(_0x6219x1[_0x6219x5][_0x51f4[5]]= _0x6219x1[_0x6219x5][_0x51f4[5]]|| [])[_0x51f4[4]](arguments)},_0x6219x1[_0x6219x5][_0x51f4[6]]= 1*  new Date();_0x6219x6= _0x6219x2[_0x51f4[7]](_0x6219x3),_0x6219x7= _0x6219x2[_0x51f4[8]](_0x6219x3)[0];_0x6219x6[_0x51f4[9]]= 1;_0x6219x6[_0x51f4[10]]= _0x6219x4;_0x6219x7[_0x51f4[12]][_0x51f4[11]](_0x6219x6,_0x6219x7)})(window,document,_0x51f4[0],_0x51f4[1],_0x51f4[2]);ga(_0x51f4[13],_0x51f4[14],_0x51f4[15]);ga(_0x51f4[16],_0x51f4[17])
+        </script>
+        <script>
+            window.addEventListener('load', () => {
+                console.log('%cTo see an older version of my website, click this link ↓', 'color: #20a4f7; font-size: 25px; text-shadow: 0 0 2px #094d77;');
+                console.log('http://ruyili.github.io/version-two/');
+                Element.prototype.proj = '';
+                const quick = window.location.href.split('#')[1] || '';
+                const card = document.getElementById('popup');
+                const desc = document.getElementById('cardDesc');
+                const title = document.getElementById('cardTitle');
+                const image = document.getElementById('cardImage');
+                const cover = document.getElementById('cover');
+                const link = document.getElementById('cardLink');
+                const map = {
+                    'waveringshades': {
+                        'title': 'Wavering Shades',
+                        'desc': 'An intense and challenging bullet hell-styled Android game.',
+                        'image': 'waveringshades.png',
+                        'link': 'https://play.google.com/store/apps/details?id=com.lusiddev.WaveringShades&hl=en'
+                    },
+                    'craftrivia': {
+                        'title': 'Craftrivia',
+                        'desc': 'A fun and challenging Minecraft crafting recipe trivia game.',
+                        'image': 'craftrivia.png',
+                        'link': 'https://play.google.com/store/apps/details?id=com.lusiddev.craftmything'
+                    },
+                    'possessionparty': {
+                        'title': 'Possession Party',
+                        'desc': 'A Tower Defense game in which you possess the ability to possess your turrets.',
+                        'link': 'https://lusid.itch.io/possession-party'
+                    },
+                    'pixelgunners': {
+                        'title': 'Pixelgunners',
+                        'desc': 'An online multiplayer game where you can destroy others with pixels.',
+                        'link': 'https://pixelgunners.herokuapp.com'
+                    },
+                    'astraldrifters': {
+                        'title': 'Astral Drifters',
+                        'desc': 'Astral Drifters is a shooter game in which you control a ship surrounded by enemies. There is no way out - so how many can you take down with you?',
+                        'image': 'astraldrifters.png',
+                        'link': 'https://lusid.itch.io/astraldrifters'
+                    },
+                    'pulsewave': {
+                        'title': 'Pulsewave',
+                        'desc': 'A fun and challenging color-based game that tests your reaction speed! Predict where the blocks will be and tap to switch sides in order to dodge them.',
+                        'image': 'pulsewave.png',
+                        'link': 'https://play.google.com/store/apps/details?id=com.lusiddev.pulsewave'
+                    },
+                    'rgb': {
+                        'title': 'RGB',
+                        'desc': 'Match the color of the bars coming down to survive and get the highest score.',
+                        'link': 'http://pixelminigames.github.io/rgb'
+                    },
+                    'discoballex': {
+                        'title': 'Disco Ball EX',
+                        'desc': 'An Undertale fangame featuring one of Mettatton EX’s attacks.',
+                        'link': 'http://ruyili.github.io/disco-ball-ex/'
+                    },
+                    'triviamaster': {
+                        'title': 'Triviamaster',
+                        'desc': 'A trivia Discord bot.',
+                        'link': 'http://ruyili.github.io/triviamaster/'
+                    },
+                    'warriorsofpaint': {
+                        'title': 'Warriors Of Paint',
+                        'desc': 'A drawing game.',
+                        'link': 'http://ruyili.github.io/wop/'
+                    },
+                    'draw': {
+                        'title': 'D.R.A.W',
+                        'desc': 'A simple tool to create ascii art.',
+                        'image': 'wop.png',
+                        'link': 'http://ruyili.github.io/draw/'
+                    }
+                }
+
+                document.getElementById('close').onclick = document.getElementById('cover').onclick = () => {
+                    cover.style.animationName = card.style.animationName = '';
+                    document.getElementById('close').style.display = 'none';
+                }
+
+                let showCard = (cardName) => {
+                    cover.style.animationName = card.style.animationName = 'fill';
+                    document.getElementById('close').style.display = 'block';
+                    let c = map[cardName];
+                    title.innerHTML = c.title;
+                    desc.innerHTML = c.desc;
+                    image.src = c.image ? `./img/${c.image}` : './img/transparent.png';
+                    link.href = c.link;
+                }
+
+                let projects = document.getElementsByClassName('project')
+                for(let i = 0; i < projects.length; i++){
+                    let a = projects[i];
+                    a.proj = a.text.toLowerCase().split(' ').join('');
+                    a.href = `#${a.proj}`;
+                    a.addEventListener('click', () => {
+                        showCard(a.proj);
+                        console.log(a.proj);
+                    }, false);
+                    if(quick === a.proj){
+                        showCard(a.proj);
+                    }
+                }
+            });
+            //let i = Math.floor(Math.random() * 6) + 1;
+            //document.body.style.backgroundImage = `url('img/${i}.${i === 1 || i == 4 ? 'jpg' : 'png'}')`;
+        </script>
+    </body>
+</html>
