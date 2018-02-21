@@ -9,6 +9,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    user-select: none;
 }
 
 hr{
@@ -26,14 +27,23 @@ hr{
     color: #ededed;
 }
 
-#footer{
+a{
     color: #ededed;
     font-size: 1rem;
+    outline: none;
+}
+
+#proj{
+    position: fixed;
+    top: 7rem;
+    left: 2.7rem;
+}
+
+#footer{
     position: fixed;
     bottom: -1.4rem;
     padding: 1rem;
     left: 50%;
-    outline: none;
     transform: translate(-50%, 0);
     transition: .1s ease-in-out;
 }
