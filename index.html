@@ -1,491 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Ruyi Li</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <style>
-            *{
-                font-family: 'Quicksand', sans-serif;
-                color: #e5e5e5;
-            }
+<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet"> 
+<link href="style.css" rel="stylesheet" type="text/css">
 
-            div{
-                text-align: center;
-            }
+<hr>
 
-            #header, #content{
-                margin: auto;
-                margin-top: 20px;
-            }
+<div id="center">
+    <h1 id="kek">Ruyi Li</h1>
+    <div id="social">
+        <div id="circle"></div>
+        <a href="https://discord.gg/p6MAC99" id="discord">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z" />
+            </svg>
+        </a>
+        <a href="https://discord.gg/p6MAC99" id="github">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H14.56C14.24,20.93 14.23,20.32 14.23,20.11L14.24,17.64C14.24,16.8 13.95,16.25 13.63,15.97C15.64,15.75 17.74,15 17.74,11.53C17.74,10.55 17.39,9.74 16.82,9.11C16.91,8.89 17.22,7.97 16.73,6.73C16.73,6.73 15.97,6.5 14.25,7.66C13.53,7.46 12.77,7.36 12,7.35C11.24,7.36 10.46,7.46 9.75,7.66C8.03,6.5 7.27,6.73 7.27,6.73C6.78,7.97 7.09,8.89 7.18,9.11C6.61,9.74 6.26,10.55 6.26,11.53C6.26,15 8.36,15.75 10.36,16C10.1,16.2 9.87,16.6 9.79,17.18C9.27,17.41 7.97,17.81 7.17,16.43C7.17,16.43 6.69,15.57 5.79,15.5C5.79,15.5 4.91,15.5 5.73,16.05C5.73,16.05 6.32,16.33 6.73,17.37C6.73,17.37 7.25,19.12 9.76,18.58L9.77,20.11C9.77,20.32 9.75,20.93 9.43,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" />
+            </svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCl1ZeIbx3ygJTjfC2DfkV7g" id="youtube">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M10,16.5V7.5L16,12M20,4.4C19.4,4.2 15.7,4 12,4C8.3,4 4.6,4.19 4,4.38C2.44,4.9 2,8.4 2,12C2,15.59 2.44,19.1 4,19.61C4.6,19.81 8.3,20 12,20C15.7,20 19.4,19.81 20,19.61C21.56,19.1 22,15.59 22,12C22,8.4 21.56,4.91 20,4.4Z" />
+            </svg>
+        </a>
+        <a href="https://twitter.com/lusiddev" id="twitter">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M17.71,9.33C18.19,8.93 18.75,8.45 19,7.92C18.59,8.13 18.1,8.26 17.56,8.33C18.06,7.97 18.47,7.5 18.68,6.86C18.16,7.14 17.63,7.38 16.97,7.5C15.42,5.63 11.71,7.15 12.37,9.95C9.76,9.79 8.17,8.61 6.85,7.16C6.1,8.38 6.75,10.23 7.64,10.74C7.18,10.71 6.83,10.57 6.5,10.41C6.54,11.95 7.39,12.69 8.58,13.09C8.22,13.16 7.82,13.18 7.44,13.12C7.81,14.19 8.58,14.86 9.9,15C9,15.76 7.34,16.29 6,16.08C7.15,16.81 8.46,17.39 10.28,17.31C14.69,17.11 17.64,13.95 17.71,9.33Z" />
+            </svg>
+        </a>
+        <a href="mailto:ruyili2002@gmail.com" id="gmail">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M20,18H18V9.25L12,13L6,9.25V18H4V6H5.2L12,10.25L18.8,6H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+            </svg>
+        </a>
+        <a href="https://www.npmjs.com/~lusiddev" id="npm">
+            <svg style="width:35px;height:35px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M4,10V14H6V11H7V14H8V10H4M9,10V15H11V14H13V10H9M12,11V13H11V11H12M14,10V14H16V11H17V14H18V11H19V14H20V10H14M3,9H21V15H12V16H8V15H3V9Z" />
+            </svg>
+        </a>
+    </div>
+</div>
 
-            h1{
-                font-size: 6rem;
-                margin: 0.3rem;
-            }
+<!--
+    padding: 1.5rem;
+    min-width: 20%;
+    background-color: rgba(0, 0, 0, 0.2);
+-->
 
-            h3{
-                margin: 0;
-            }
+<div id="particles"></div>
 
-            h4{
-                font-size: 0.75rem;
-            }
+<a id="footer" href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=50109402">Image taken from pixiv.net</a>
 
-            #links a{
-                text-decoration-color: rgba(0, 0, 0, 0) !important;
-                font-size: 1.2rem;
-            }
-
-            html, body{
-                width: 100%;
-                height: 100%;
-                padding: 0;
-                margin: 0;
-                overflow-x: hidden;
-                background: url('img/1.jpg') center center / cover no-repeat fixed;
-            }
-
-            ::selection{
-                color: rgba(232, 232, 232, 0.5);
-                background-color: rgba(89, 122, 175, 0.6);
-            }
-
-            a{
-                text-decoration-color: rgba(232, 232, 232, 0.5);
-            }
-
-            .fa-github:hover{
-                color: #bababa;
-            }
-
-            .fa-youtube-play:hover{
-                color: #db190f;
-            }
-
-            .fa-twitter:hover{
-                color: #3acaff;
-            }
-
-            .card{
-                margin: auto;
-                width: 280px;
-                height: 400px;
-                background: #f2f2f2;
-                background: -webkit-linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
-                background: -moz-linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
-                background: -o-linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
-                background: linear-gradient(180deg, #28c5ff 125px, #ddd 125px);
-                border: 1px solid #f9f9f9;
-                padding: 0 20px;
-                border-radius: 10px;
-                transition: .1s;
-            }
-
-            .card img{
-                width: 100px;
-                height: 100px;
-                border-radius: 50px;
-                position: relative;
-                top: 75px;
-                border: 2px solid #ddd;
-                transition: .1s ease-in-out;
-                background-color: #ededed;
-            }
-            
-            #container{
-                background-color: rgba(0, 0, 0, 0.6);   
-            }
-
-            .card img:hover{
-                border-radius: 10px;
-            }
-
-            .card h2, .card p{
-                position: relative;
-                top: 50px;
-                color: #303030 !important;
-            }
-
-            .card a{
-                position: relative;
-                top: 75px;
-                color: #0c62b7;
-                text-decoration: underline;
-                cursor: pointer;
-            }
-
-            .card a:hover:after{
-                content: ' >>';
-            }
-
-            .card:hover{
-                box-shadow: 0 0 10px 2px #f9f9f9;
-            }
-
-            .dark{
-                color: #262626;
-            }
-
-            hr{
-                border: 0;
-                height: 1px;
-                margin-top: 45px;
-                background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
-                background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
-                background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
-                background-image: linear-gradient(left, rgba(0, 0, 0, 0) 25%, white, rgba(0, 0, 0, 0) 75%);
-            }
-
-            h2{
-                font-size: 2rem;
-                font-weight: 400;
-            }
-
-            #popup{
-                transform: scale(0, 0);
-                position: fixed;
-                top: calc(50% - 200px);
-                left: calc(50% - 160px);
-                animation-duration: .6s;
-                animation-fill-mode: forwards;
-            }
-
-            #cover{
-                transform: scale(0, 0);
-                height: 100%;
-                width: 100%;
-                position: fixed;
-                left: 0;
-                top: 0;
-                background-color: rgba(0, 0, 0, 0.5);
-                animation-duration: .6s;
-                animation-fill-mode: forwards;
-            }
-
-            table{
-                width: 75%;
-                margin: auto;
-            }
-
-            tr td:not(:last-child){
-                border-right: 1px dotted rgba(255, 255, 255, 0.5);
-            }
-
-            table{
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                padding: 5px;
-            }
-
-            #close{
-                position: fixed;
-                right: 5px;
-                top: 0;
-                cursor: pointer;
-                font-size: 2rem;
-                display: none;
-            }
-
-            @keyframes fill{
-                from{
-                    transform: scale(0, 0);
-                }
-                to{
-                    transform: scale(1, 1);
-                }
-            }
-
-        </style>
-    </head>
-    <body>
-        <div id='container'>
-            <div id="header">
-                <h1> ruyi li </h1>
-
-                <div id="links">
-                    <a href="https://github.com/ruyiLi/" title="GitHub">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCl1ZeIbx3ygJTjfC2DfkV7g/videos" title="YouTube">
-                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://twitter.com/lusiddev" title="Twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <h3>〈lusiddev〉</h3>
-                <h4>image courtesy of <a id="imageProvider" href="https://wall.alphacoders.com/">wallpaper abyss</a></h4>
-            </div>
-            <hr>
-            <div id="content">
-                <h2>projects</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td><a class="project">Wavering Shades</a></td>
-                            <td><a class="project">Craftrivia</a>
-                            <td><a class="project">Possession Party</a>
-                            <td><a class="project">Pixelgunners</a>
-                            <td><a class="project">Astral Drifters</a>
-                        </tr>
-                        <tr>
-                            <td><a class="project">Pulsewave</a>
-                            <td><a class="project">RGB</a>
-                            <td><a class="project">Disco Ball EX</a>
-                            <td><a class="project">DRAW</a>
-                            <td><a class="project">Warriors Of Paint</a>
-                        </tr>
-                        <tr>
-                            <td><a class="project">Triviamaster</a>
-                            <td><a class="project">SDV Mods</a>
-                            <td><a class="project">CSS Experiments</a>
-                            <td><a class="project">Ava</a>
-                            <td><a class="project">CSS Shockwave Please</a>
-                        </tr>
-                        <tr>
-                            <td><a class="project">Brain IDE</a>
-                            <td><a class="project">Hastebin Generator</a>
-                            <td><a class="project">Hearthstone Cards</a>
-                            <td><a class="project">GitHub Node API</a>
-                            <td><a class="project">Greetings Human</a>
-                        </tr>
-                        <tr>
-                            <td><a class="project">Flower Bot</a>
-                            <td><a class="project">An Omnic</a>
-                            <td><a class="project">Stardew Heart Editor</a>
-                            <td><a class="project">xkcd.py</a>
-                            <td><a class="project">xkcd4J</a>
-                        </tr>
-                        <tr>
-                            <td><a class="project">CSS Minifier</a>
-                            <td><a class="project">Easy Bar</a>
-                            <td><a class="project">Image Converter</a>
-                            <td><a class="project">URL To Text</a>
-                            <td><a class="project">Zippy Jar</a>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="cover">
-                <div id="popup" class="card">
-                    <img id="cardImage">
-                    <h2 id="cardTitle">Card Name</h2>
-                    <p id="cardDesc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                    <a id="cardLink" href="#">Learn More</a>
-                </div>
-                <a id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
-            </div>
-            <script>
-                var _0x51f4=["\x73\x63\x72\x69\x70\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x6F\x6F\x67\x6C\x65\x2D\x61\x6E\x61\x6C\x79\x74\x69\x63\x73\x2E\x63\x6F\x6D\x2F\x61\x6E\x61\x6C\x79\x74\x69\x63\x73\x2E\x6A\x73","\x67\x61","\x47\x6F\x6F\x67\x6C\x65\x41\x6E\x61\x6C\x79\x74\x69\x63\x73\x4F\x62\x6A\x65\x63\x74","\x70\x75\x73\x68","\x71","\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x61\x73\x79\x6E\x63","\x73\x72\x63","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x63\x72\x65\x61\x74\x65","\x55\x41\x2D\x31\x30\x34\x33\x32\x31\x39\x39\x32\x2D\x31","\x61\x75\x74\x6F","\x73\x65\x6E\x64","\x70\x61\x67\x65\x76\x69\x65\x77"];(function(_0x6219x1,_0x6219x2,_0x6219x3,_0x6219x4,_0x6219x5,_0x6219x6,_0x6219x7){_0x6219x1[_0x51f4[3]]= _0x6219x5;_0x6219x1[_0x6219x5]= _0x6219x1[_0x6219x5]|| function(){(_0x6219x1[_0x6219x5][_0x51f4[5]]= _0x6219x1[_0x6219x5][_0x51f4[5]]|| [])[_0x51f4[4]](arguments)},_0x6219x1[_0x6219x5][_0x51f4[6]]= 1*  new Date();_0x6219x6= _0x6219x2[_0x51f4[7]](_0x6219x3),_0x6219x7= _0x6219x2[_0x51f4[8]](_0x6219x3)[0];_0x6219x6[_0x51f4[9]]= 1;_0x6219x6[_0x51f4[10]]= _0x6219x4;_0x6219x7[_0x51f4[12]][_0x51f4[11]](_0x6219x6,_0x6219x7)})(window,document,_0x51f4[0],_0x51f4[1],_0x51f4[2]);ga(_0x51f4[13],_0x51f4[14],_0x51f4[15]);ga(_0x51f4[16],_0x51f4[17])
-            </script>
-            <script>
-                window.addEventListener('load', () => {
-                    console.log('%cTo see an older version of my website, click this link ↓', 'color: #20a4f7; font-size: 25px; text-shadow: 0 0 2px #094d77;');
-                    console.log('http://ruyili.github.io/version-two/');
-                    Element.prototype.proj = '';
-                    const quick = window.location.href.split('#')[1] || '';
-                    const card = document.getElementById('popup');
-                    const desc = document.getElementById('cardDesc');
-                    const title = document.getElementById('cardTitle');
-                    const image = document.getElementById('cardImage');
-                    const cover = document.getElementById('cover');
-                    const link = document.getElementById('cardLink');
-                    const map = {
-                        'waveringshades': {
-                            'title': 'Wavering Shades',
-                            'desc': 'An intense and challenging bullet hell-styled Android game.',
-                            'image': 'waveringshades.png',
-                            'link': 'https://play.google.com/store/apps/details?id=com.lusiddev.WaveringShades&hl=en'
-                        },
-                        'craftrivia': {
-                            'title': 'Craftrivia',
-                            'desc': 'A fun and challenging Minecraft crafting recipe trivia game.',
-                            'image': 'craftrivia.png',
-                            'link': 'https://play.google.com/store/apps/details?id=com.lusiddev.craftmything'
-                        },
-                        'possessionparty': {
-                            'title': 'Possession Party',
-                            'desc': 'A Tower Defense game in which you possess the ability to possess your turrets.',
-                            'link': 'https://lusid.itch.io/possession-party'
-                        },
-                        'pixelgunners': {
-                            'title': 'Pixelgunners',
-                            'desc': 'An online multiplayer game where you can destroy others with pixels.',
-                            'link': 'https://pixelgunners.herokuapp.com'
-                        },
-                        'astraldrifters': {
-                            'title': 'Astral Drifters',
-                            'desc': 'Astral Drifters is a shooter game in which you control a ship surrounded by enemies. There is no way out - so how many can you take down with you?',
-                            'image': 'astraldrifters.png',
-                            'link': 'https://lusid.itch.io/astraldrifters'
-                        },
-                        'pulsewave': {
-                            'title': 'Pulsewave',
-                            'desc': 'A fun and challenging color-based game that tests your reaction speed! Predict where the blocks will be and tap to switch sides in order to dodge them.',
-                            'image': 'pulsewave.png',
-                            'link': 'https://play.google.com/store/apps/details?id=com.lusiddev.pulsewave'
-                        },
-                        'rgb': {
-                            'title': 'RGB',
-                            'desc': 'Match the color of the bars coming down to survive and get the highest score.',
-                            'link': 'http://pixelminigames.github.io/rgb'
-                        },
-                        'discoballex': {
-                            'title': 'Disco Ball EX',
-                            'desc': 'An Undertale fangame featuring one of Mettatton EX’s attacks.',
-                            'link': 'http://ruyili.github.io/disco-ball-ex/'
-                        },
-                        'triviamaster': {
-                            'title': 'Triviamaster',
-                            'desc': 'A trivia Discord bot written in discord.js using the Commando framework.',
-                            'link': 'http://ruyili.github.io/triviamaster/'
-                        },
-                        'warriorsofpaint': {
-                            'title': 'Warriors Of Paint',
-                            'desc': 'A drawing game.',
-                            'image': 'wop.png',
-                            'link': 'http://ruyili.github.io/wop/'
-                        },
-                        'draw': {
-                            'title': 'D.R.A.W',
-                            'desc': 'A simple tool to create ascii art.',
-                            'link': 'http://ruyili.github.io/draw/'
-                        },
-                        'sdvmods': {
-                            'title': 'Stardew Valley Mods',
-                            'desc': 'Mods created using the Stardew Modding API for the game Stardew Valley.',
-                            'image': 'sdv.png',
-                            'link': 'https://github.com/RuyiLi/stardew-valley-mods'
-                        },
-                        'cssexperiments': {
-                            'title': 'CSS Experiments',
-                            'desc': 'A website containing some CSS experiments, such as text transitions and slideshows.',
-                            'link': 'https://ruyili.github.io/css-experiments/'
-                        },
-                        'cssshockwaveplease': {
-                            'title': 'CSS Shockwave, Please!',
-                            'desc': 'A CSS shockwave generator.',
-                            'link': 'https://ruyili.github.io/css-shockwave-please/'
-                        },
-                        'ava': {
-                            'title': 'Ava',
-                            'desc': 'A simple avatar generator.',
-                            'link': 'https://ruyili.github.io/css-shockwave-please/'
-                        },
-                        'brainide': {
-                            'title': 'Brain IDE',
-                            'desc': 'An IDE written in Python for the esoteric language Brainf***.',
-                            'link': 'https://ruyili.github.io/brain/'
-                        },
-                        'hastebingenerator': {
-                            'title': 'hastebin-generator',
-                            'desc': 'A node module for generating hastebin links.',
-                            'link': 'https://www.npmjs.com/package/hastebin-generator'
-                        },
-                        'hearthstonecards': {
-                            'title': 'hearthstone-cards',
-                            'desc': 'A node module to fetch Hearthstone card information using the HearthstoneJSON API.',
-                            'link': 'https://www.npmjs.com/package/hearthstone-cards'
-                        },
-                        'githubnodeapi': {
-                            'title': 'github-node-api',
-                            'desc': 'An incomplete node module for interacting with the GitHub API.',
-                            'link': 'https://github.com/RuyiLi/github-node-api'
-                        },
-                        'greetingshuman': {
-                            'title': 'Greetings, Human',
-                            'desc': 'An Undertale logo creator.',
-                            'link': 'http://ruyili.github.io/greetings-human/'
-                        },
-                        'flowerbot': {
-                            'title': 'FlowerBot',
-                            'desc': 'A reddit bot made with the Python Reddit API Wrapper.',
-                            'link': 'https://www.reddit.com/user/flower_bot'
-                        },
-                        'anomnic': {
-                            'title': 'AnOmnic',
-                            'desc': 'A discontinued Overwatch reddit bot made with the Python Reddit API Wrapper.',
-                            'link': 'https://www.reddit.com/user/an_omnic'
-                        },
-                        'stardewhearteditor': {
-                            'title': 'Stardew Heart Editor',
-                            'desc': 'A program for modifying Stardew Valley friendship values.',
-                            'link': 'https://github.com/RuyiLi/StardewHeartEditor'
-                        },
-                        'xkcd.py': {
-                            'title': 'xkcd.py',
-                            'desc': 'A python script for fetched xkcd comic information.',
-                            'link': 'https://github.com/RuyiLi/xkcd-python-api'
-                        },
-                        'xkcd4j': {
-                            'title': 'xkcd4J',
-                            'desc': 'A Java API for fetched xkcd comic information.',
-                            'link': 'https://github.com/RuyiLi/xkcd-java-api'
-                        },
-                        'cssminifier': {
-                            'title': 'CSS Minifier',
-                            'desc': 'An online tool to compress your CSS files.',
-                            'link': 'http://ruyili.github.io/css-minifier/'
-                        },
-                        'easybar': {
-                            'title': 'Easy Bar',
-                            'desc': 'A tool to create bar graphs made in Java.',
-                            'link': 'https://github.com/RuyiLi/easy-bar'
-                        },
-                        'imageconverter': {
-                            'title': 'Image Converter',
-                            'desc': 'An image converter made with Java.',
-                            'link': 'https://github.com/RuyiLi/image-converter/'
-                        },
-                        'urltotext': {
-                            'title': 'Url To Text',
-                            'desc': 'A tool made in Java that scrapes websites into a text file.',
-                            'link': 'https://github.com/RuyiLi/url-to-txt/'
-                        },
-                        'zippyjar': {
-                            'title': 'Zippy Jar',
-                            'desc': 'A program made in Java that converts jar files to zip files.',
-                            'link': 'https://github.com/RuyiLi/zippy-jar/'
-                        }
-                    }
-
-                    let close = () => {
-                        cover.style.animationName = card.style.animationName = '';
-                        document.getElementById('close').style.display = 'none';
-                    }
-
-                    document.getElementById('close').addEventListener('click', close);
-
-                    let showCard = (cardName) => {
-                        cover.style.animationName = card.style.animationName = 'fill';
-                        document.getElementById('close').style.display = 'block';
-                        let c = map[cardName];
-                        title.innerHTML = c.title;
-                        desc.innerHTML = c.desc;
-                        image.src = c.image ? `./img/${c.image}` : './img/transparent.png';
-                        link.href = c.link;
-                    }
-
-                    let projects = document.getElementsByClassName('project')
-                    for(let i = 0; i < projects.length; i++){
-                        let a = projects[i];
-                        a.proj = a.text.toLowerCase().replace(/\s+/g, '');
-                        a.href = `#${a.proj}`;
-                        a.addEventListener('click', () => {
-                            showCard(a.proj);
-                            console.log(a.proj);
-                        }, false);
-                        if(quick === a.proj){
-                            showCard(a.proj);
-                        }
-                    }
-                });
-                //let i = Math.floor(Math.random() * 6) + 1;
-                //document.body.style.backgroundImage = `url('img/${i}.${i === 1 || i == 4 ? 'jpg' : 'png'}')`;
-            </script>
-        </div>
-    </body>
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" charset="utf-8"></script>
+<script>
+    (function(){
+        particlesJS.load('particles', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    })();
+</script>
