@@ -41,15 +41,11 @@ a{
 
 #footer{
     position: fixed;
-    bottom: -1.4rem;
+    bottom: -.5rem;
     padding: 1rem;
     left: 50%;
     transform: translate(-50%, 0);
     transition: .1s ease-in-out;
-}
-
-#footer:hover{
-    bottom: -.5rem;
 }
 
 #particles {
