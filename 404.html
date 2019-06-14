@@ -1,9 +1,95 @@
 <script>
-  var redirs = {
-    "triv": "https://discordapp.com/oauth2/authorize?client_id=316591030432563202&scope=bot&permissions=19456&redirect_url=http://ruyili.ca/triviamaster/"
-  }
-  var foo = window.location.href.split('/').pop();
-  console.log(foo)
-  if(foo in redirs)
-    window.location.href = redirs[foo];
+    var redirs = {
+        "triv": "https://discordapp.com/oauth2/authorize?client_id=316591030432563202&scope=bot&permissions=19456&redirect_url=http://ruyili.ca/triviamaster/"
+    }
+    var foo = window.location.href.split('/').pop();
+    console.log(foo)
+    if (foo in redirs) window.location.href = redirs[foo];
 </script>
+<style>
+    body {
+        background-color: rgb(43, 43, 43);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .glitch {
+        font-size: 70px;
+        line-height: 1;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .glitch::before,
+    .glitch::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .8;
+    }
+
+    .glitch::before {
+        color: rgb(81, 235, 255);
+        z-index: -2;
+        content: 'NOT FOUND';
+        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite;
+    }
+
+    .glitch::after {
+        color: rgb(193, 255, 247);
+        z-index: -1;
+        content: '404';
+        font-size: 200px;
+        line-height: 70px;
+        text-align: center;
+        animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite;
+    }
+
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+
+        30% {
+            transform: translate(0, 0);
+        }
+
+        40% {
+            transform: translate(-5px, -2px);
+        }
+
+        60% {
+            transform: translate(0, 0);
+        }
+
+        80% {
+            transform: translate(5px, 2px);
+        }
+
+        to {
+            transform: translate(0);
+        }
+    }
+
+    #back {
+        font-size: 25px;
+        font-weight: 300;
+        position: absolute;
+        top: calc(50% + 140px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: rgb(213, 255, 252);
+    }
+</style>
+
+<a class="glitch">NOT FOUND</a>
+<a href="/" id="back">back to home</a>
