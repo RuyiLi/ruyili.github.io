@@ -4,7 +4,7 @@ const $ = document.querySelector.bind(document);
 
 function init () {
     new Swup({
-        linkSelector: 'a',
+        linkSelector: 'a[href^="/"]',
         debug: true
     });
 }
