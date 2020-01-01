@@ -59,6 +59,10 @@ a {
     color: var(--white);
 }
 
+div#swupBody {
+    text-align: center;
+}
+
 /* Swup Transitions */
 
 .transition-fade {

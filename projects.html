@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Ruyi Li</title>
+    <title> Ruyi Li </title>
 
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my website!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Web manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
 
     <!-- OpenGraph meta tags -->
     <meta name="og:title" content="Ruyi Li">
@@ -18,8 +21,13 @@
     <meta name="theme-color" content="#58AEFF">
     <meta http-equiv="cache-control" content="max-age=31557600" />
 
+    <!-- Images -->
+    <link rel="preload" href="img/projects/triviamaster.png" as="image">
+    <link rel="preload" href="img/projects/imagesplitter.png" as="image">
+    <link rel="preload" href="img/projects/007.png" as="image">
+    <link rel="preload" href="img/projects/gisty.png" as="image">
+
     <!-- Scripts -->
-    <!-- <script type="text/javascript" src="https://kit.fontawesome.com/01289a7069.js"></script> -->
     <script type="text/javascript" src="https://unpkg.com/swup@2.0.5/dist/swup.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 
@@ -32,21 +40,149 @@
     <div id="cover"></div>
     <main id="swup">
         <link href="stylesheets/projects.css" rel="stylesheet" type="text/css">
+
         <div id="swupBody" class="transition-fade">
             <nav>
-                <a href="/"> Back to home </a>
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm28.9-143.6L209.4 288H392c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24H209.4l75.5-72.4c9.7-9.3 9.9-24.8.4-34.3l-11-10.9c-9.4-9.4-24.6-9.4-33.9 0L107.7 239c-9.4 9.4-9.4 24.6 0 33.9l132.7 132.7c9.4 9.4 24.6 9.4 33.9 0l11-10.9c9.5-9.5 9.3-25-.4-34.3z"
+                            fill="#fff" /></svg>
+                    Back to home
+                </a>
                 <h1> My Projects </h1>
             </nav>
 
-            <!-- <div id="rect"></div> -->
+            <!-- TEMPLATE
+
+            <div class="project" id="template">
+                <div class="title">
+                    <img src="./img/projects/project.png" alt="Project Logo">
+                    <h1> Project </h1>
+                </div>
+                <div class="about">
+                    <p> Description </p>
+                    <fieldset>
+                        <legend> Technologies Used </legend>
+                        <span> Algorithms </span>
+                    </fieldset>
+                </div>
+                <div class="details">
+                    <a href="https://github.com/RuyiLi/"> Source </a>
+                </div>
+            </div>
+
+            -->
+
             <div class="project" id="triviamaster">
-                <h1> TriviaMaster </h1>
-                <p> A trivia bot with over 30 categories. Features multiple choice, true/false, and jeopardy-style
-                    questions. Temporarily down for maintenance; join my Discord server to see a list of planned
-                    features! </p>
-                <div class="links">
+                <div class="title">
+                    <img src="./img/projects/triviamaster.png" alt="TriviaMaster Logo">
+                    <h1> TriviaMaster </h1>
+                </div>
+                <div class="about">
+                    <p> A trivia bot with over 30 categories. Features multiple choice, true/false, and jeopardy-style
+                        questions. Temporarily down for maintenance; join my Discord server to see a list of planned
+                        features! </p>
+                    <fieldset>
+                        <legend> Technologies Used </legend>
+                        <span> Python </span>
+                        <span> TypeScript </span>
+                        <span> Node.js </span>
+                        <span> discord.py </span>
+                        <span> TypeORM </span>
+                        <span> PostgreSQL </span>
+                        <span> Kotlin </span>
+                    </fieldset>
+                </div>
+                <div class="details">
                     <a href="https://github.com/RuyiLi/triviamaster"> Source </a>
                     <a href="https://ruyili.ca/triviamaster"> Website </a>
+                    <a href="https://discord.gg/p6MAC99"> Discord Server </a>
+                </div>
+            </div>
+
+            <div class="project" id="image-splitter">
+                <div class="title">
+                    <h1> Image Splitter </h1>
+                </div>
+                <div class="about">
+                    <p> A simple tool to split images/gifs into square tiles, like large Discord emojis. </p>
+                    <fieldset>
+                        <legend> Technologies Used </legend>
+                        <span> JavaScript </span>
+                    </fieldset>
+                </div>
+                <div class="details">
+                    <img src="https://img.shields.io/github/stars/RuyiLi/image-splitter?style=flat-square&labelColor=transparent&color=blue"
+                        alt="image-splitter stars" />
+                    <a href="https://github.com/RuyiLi/image-splitter"> Source </a>
+                    <a href="https://ruyili.ca/image-splitter"> Website </a>
+                </div>
+            </div>
+
+            <div class="project" id="double-o-seven">
+                <div class="title">
+                    <img src="./img/projects/007.png" alt="Double-o-seven Logo">
+                    <h1> Double-o-seven </h1>
+                </div>
+                <div class="about">
+                    <p>
+                        A Discord bot created for Discord Hack Week. Relive your childhood by playing this nostalgic
+                        game against your friends in Discord! </p>
+                    <fieldset>
+                        <legend> Technologies Used </legend>
+                        <span> TypeScript </span>
+                        <span> discord.js </span>
+                    </fieldset>
+                </div>
+                <div class="details">
+                    <a href="https://github.com/RuyiLi/double-o-seven"> Source </a>
+                </div>
+            </div>
+
+            <div class="project" id="craftrivia">
+                <div class="title">
+                    <img src="./img/projects/craftrivia.webp" alt="Craftrivia Logo">
+                    <h1> Craftrivia </h1>
+                </div>
+                <div class="about">
+                    <p> An entertaining Minecraft quiz game for Android where you can put your crafting skills to the
+                        test. How much do you know about your Minecraft recipes?
+                        <br>
+                        Not an official Minecraft product. Not approved by or associated with Mojang. Not affiliated or
+                        endorsed by Mojang in any way.
+                    </p>
+                    <fieldset>
+                        <legend> Technologies Used </legend>
+                        <span> Unity </span>
+                        <span> C# </span>
+                        <span> Android </span>
+                    </fieldset>
+                </div>
+                <div class="details">
+                    <img src="https://img.shields.io/badge/downloads-%3E130%20000-green?style=flat-square&labelColor=transparent&color=blue"
+                        alt="Total Craftrivia Downloads" />
+                    <a href="https://play.google.com/store/apps/details?id=com.lusiddev.craftmything">
+                        Play Store
+                    </a>
+                </div>
+            </div>
+
+            <div class="project" id="gisty">
+                <h1> Gisty </h1>
+                <p> A test React app to fetch a user's gists. </p>
+                <div class="links">
+                    <a href="https://github.com/RuyiLi/gisty"> Source </a>
+                    <a href="https://gisty.glitch.me"> Website </a>
+                </div>
+            </div>
+
+            <div class="project" id="hijiri">
+                <h1> Hijiri </h1>
+                <p> A simple API for generating random avatars. </p>
+                <div class="links">
+                    <a href="https://github.com/RuyiLi/hijiri"> Source </a>
+                    <a href="https://hijiri.glitch.me/"> Website </a>
                 </div>
             </div>
 

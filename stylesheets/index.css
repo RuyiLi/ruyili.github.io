@@ -70,36 +70,59 @@ div#social a {
 
 div#social a:hover {
     border-radius: 25%;
+    font-size: 1.3rem;
 }
 
 div#social a svg {
-    position: relative;
+    position: absolute;
+    left: calc(50% - 10px);
     top: calc(50% - 10px);
     width: 20px;
     height: 20px;
 }
 
+/* Tooltip text */
+
+div#social a span {
+    position: absolute;
+    line-height: 1.3rem;
+    height: 1.3rem;
+}
+
+div#social a#discord span,
+div#social a#github span,
+div#social a#youtube span {
+    left: calc(100% + 1rem);
+    top: calc(50% - 0.7rem);
+}
+
+div#social a#linkedin span,
+div#social a#gmail span,
+div#social a#twitter span {
+    right: calc(100% + 1rem);
+    top: calc(50% - 0.7rem);
+}
+
 /* Some positioning/sizing exceptions for certain icons */
 
 div#social a#twitter svg {
-    position: relative;
-    top: calc(50% - 11.5px);
-    left: 1.5px;
+    top: calc(50% - 12px);
+    left: calc(50% - 11px);
     width: 24px;
     height: 24px;
 }
 
 div#social a#github svg {
-    position: relative;
+    /* position: relative; */
     top: calc(50% - 13px);
-    left: 0.2px;
+    left: calc(50% - 13px);
     width: 26px;
     height: 26px;
 }
 
 div#social a#discord svg {
-    position: relative;
     top: calc(50% - 9.5px);
+    left: calc(50% - 10px);
 }
 
 /* Icon-specific positioning */
