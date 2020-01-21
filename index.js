@@ -4,7 +4,7 @@ const $ = document.querySelector.bind(document);
 
 function init () {
     new Swup({
-        linkSelector: 'a[href^="/"]:not(a[href^="/resume"])',
+        linkSelector: 'a[href^="/"]:not([href^="/resume"])',
         debug: true
     });
 }
