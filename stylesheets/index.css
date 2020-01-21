@@ -26,12 +26,14 @@ h1#name {
     color: var(--white);
 }
 
-a#proj {
+a#proj, a#resume {
     position: fixed;
-    top: 7rem;
     left: 2.35rem;
     font-size: 1.2rem;
 }
+
+a#proj { top: 7rem; }
+a#resume { bottom: 7rem; }
 
 div#circle {
     display: block;
