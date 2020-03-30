@@ -21,7 +21,7 @@ nav {
     line-height: 4rem;
     font-size: 1.5rem;
     z-index: 999;
-    background: #ededed2a;
+    background: transparent;
     color: var(--white);
     margin: 0 auto;
 }
@@ -32,8 +32,10 @@ nav a {
     left: 1px;
     top: 0;
     padding: 0 1rem;
+    border-left: 1px solid transparent;
     /* top: calc(50% - 0.7rem); */
     font-size: 1.4rem;
+    transition: .2s ease-in;
 }
 
 nav a:hover {
@@ -127,6 +129,7 @@ div.project div.about fieldset span {
 
 div.project div.about fieldset span:hover {
     background: #ededed2f;
+    cursor: default;
 }
 
 div.project div.details a {
