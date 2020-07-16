@@ -100,16 +100,16 @@ div#social a#youtube span {
 
 div#social a#linkedin span,
 div#social a#gmail span,
-div#social a#twitter span {
+div#social a#devpost span {
     right: calc(100% + 1rem);
     top: calc(50% - 0.7rem);
 }
 
 /* Some positioning/sizing exceptions for certain icons */
 
-div#social a#twitter svg {
+div#social a#devpost svg {
     top: calc(50% - 12px);
-    left: calc(50% - 11px);
+    left: calc(50% - 13px);
     width: 24px;
     height: 24px;
 }
@@ -147,7 +147,7 @@ a#youtube {
     left: calc(8rem + 32px);
 }
 
-a#twitter { 
+a#devpost {
     position: fixed;
     bottom: -2rem; 
     right: calc(8rem + 32px); 
@@ -182,9 +182,9 @@ a#youtube:hover {
     border-color: var(--red);
 }
 
-a#twitter:hover { 
-    background-color: var(--twitter); 
-    border-color: var(--twitter); 
+a#devpost:hover {
+    background-color: var(--devpost);
+    border-color: var(--devpost);
 }
 
 a#gmail:hover { 
