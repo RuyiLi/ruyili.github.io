@@ -1,0 +1,45 @@
+@import 'base/variables';
+
+
+$background: $edel;
+
+
+@import 'base/base';
+
+
+div#links a {
+    text-decoration: underline;
+}
+
+div#dogs {
+    height: calc(100vh - #{$page-border-width} - 6rem - #{$body-font-size});
+
+    img {
+        pointer-events: none;
+
+        &#nova {
+            position: absolute;
+            width: 50vw;
+            right: 15vw;
+            bottom: 30px;
+            filter: drop-shadow(-80px 25px 3px rgba(0, 0, 0, 0.1));
+        }
+
+        &#freckles {
+            position: absolute;
+            width: 24vw;
+            right: 2vw;
+            bottom: 10vw;
+            filter: drop-shadow(-80px 25px 3px rgba(0, 0, 0, 0.1));
+        }
+    }
+}
+
+
+svg#lines {
+    position: absolute;
+    right: 12.5vw;
+    top: calc(#{$page-border-width} + 6.5rem);
+    height: calc(100vh - #{$page-border-width} * 2 - 10rem);
+    width: 35vw;
+}

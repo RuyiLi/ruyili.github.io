@@ -1,0 +1,29 @@
+extends layout
+
+block head
+	title Ruyi Li
+	link(rel='stylesheet' href='/scss/index.scss')
+
+block content
+	div.columns.fullheight.is-vcentered
+		div.column.has-text-centered
+			div.has-text-right.link-group#socials
+				a.social-link#github(href='https://github.com/RuyiLi/')
+					i.fab.fa-github
+				a.social-link#linkedin(href='https://www.linkedin.com/in/ruyi-li/')
+					i.fab.fa-linkedin-in
+				a.social-link#youtube(href='https://www.youtube.com/channel/UCl1ZeIbx3ygJTjfC2DfkV7g')
+					i.fab.fa-youtube
+			h1.title.is-size-1.py-4 Ruyi Li
+			div.has-text-left.link-group#links
+				a(href='/pages/about.pug') About
+				a(href='/../resume/resume_cs.pdf') Resumé
+				a(href='/pages/about.pug') Portfolio
+
+		//- div#heading
+			h2.subtitle BCS/BBA student at the University of Waterloo.
+		//- div.link-group#socials
+			a.social-link#github(href='https://github.com/RuyiLi/')
+				i.fab.fa-github
+			a.social-link#linkedin(href='https://www.linkedin.com/in/ruyi-li/')
+				i.fab.fa-linkedin-in

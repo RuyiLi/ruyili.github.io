@@ -1,0 +1,44 @@
+doctype html
+
+html(lang='en')
+	head
+		script(async src='https://www.googletagmanager.com/gtag/js?id=UA-104321992-1')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'UA-104321992-1');
+
+		meta(charset='utf-8')
+		meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+
+		- const desc = `Developer of software. Currently studying Computer Science and
+		-				Business Administration at the University of Waterloo and
+		-				Wilfrid Laurier University.`
+		meta(name='description' content=desc)
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+		// OpenGraph Tags
+		meta(name='og:title' content='Ruyi Li')
+		meta(name='og:description' content=desc)
+		meta(name='og:url' content='https://ruyili.ca/')
+		meta(name='og:site_name' content='Ruyi Li')
+		meta(name='og:locale' content='en_US')
+		meta(name='og:type' content='website')
+
+		meta(name='theme-color' content='#98CE00')
+		meta(http-equiv='cache-control' content='max-age=31557600')
+
+		link(rel='stylesheet' href='/../node_modules/normalize.css/normalize.css')
+		block head
+
+	body
+		main.fullheight
+			block content
+		
+		script.
+			const VISIBILITY_CLASS = 'invisible';
+			document.querySelector('body > main').classList.add(VISIBILITY_CLASS)
+		
+		script(async src='/js/page-fade.js')
+		script(async src='/js/fa-loader.js')

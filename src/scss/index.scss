@@ -1,0 +1,73 @@
+@import 'base/variables';
+
+
+$icon-size: 1em;
+$social-size: 1.75em;
+
+$github: #1b1f23;
+$linkedin: #0e76a8;
+$youtube: #ff0000;
+
+$text: $secondary;
+$accent: $text;
+$background: transparent;
+
+
+@import 'base/base';
+
+
+h1 {
+	margin: -10px !important;
+}
+
+div#links {
+	padding-left: 49%;
+}
+
+// Social Icons
+
+div#socials {
+	padding-right: 49%;
+	
+	a.social-link {
+		@extend .has-text-centered;
+
+		display: inline-block;
+		width: $social-size;
+		height: $social-size;
+		border-radius: $social-size;
+		border: 2px solid $secondary;
+	
+		color: $text;
+		box-shadow: none;
+	
+		svg {
+			position: relative;
+			width: $icon-size !important;
+			height: $icon-size !important;
+			top: 0;
+			// $cen: calc(-50% - #{$social-size / 8} - 1px);
+			// transform: translate($cen, $cen);
+		}
+	
+		// &#github svg {
+		// 	$cen: calc(-50% - #{$social-size / 8} - 1px);
+		// 	transform: translate(calc(#{$cen} - 1px), $cen);
+		// }
+	
+		&:hover {
+			border-radius: 10px;
+			color: $primary;
+	
+			@mixin color-social ($color) {
+				background-color: $color;
+				border-color: $color;
+			}
+	
+			// Icon-specific Coloring
+			&#github { @include color-social($github); }
+			&#linkedin { @include color-social($linkedin); }
+			&#youtube { @include color-social($youtube); }
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.text-inverted {
+	background: $text;
+	color: $background;
+	padding-left: 10px;
+}
+
+.borderless {
+	border: 0;
+}
+
+.vh-centered {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.link-group {
+	a + a {
+		margin-left: $link-gap;
+	}
+}

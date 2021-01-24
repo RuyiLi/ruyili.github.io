@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300&display=swap');
+
+
+// Bulma Overrides //
+$body-family: 'Noto Serif JP';
+$body-font-size: calc(18px + 0.3vw);
+
+$link: $text;
+$link-hover: $text;
+$scheme-main: $accent;
+
+$control-radius: 0;
+$control-radius-small: 0;
+
+
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
+@import '~bulma/sass/helpers/_all';
+
+@import '~bulma/sass/elements/container';
+@import '~bulma/sass/grid/columns';
+
+@import 'global';
+@import 'helpers';

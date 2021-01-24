@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    background: $page-background;
+}
+
+body {
+	background: radial-gradient(#dddddd, $page-background);
+	color: $text;
+    
+    padding: $page-border-width;
+    font-weight: 300;
+
+	> main {
+        background: $background;
+		// height: calc(100vh - #{$page-border-width} * 2);
+		padding: 2rem;
+    
+        opacity: 1;
+        transition: .2s opacity;
+    
+        &.invisible {
+            opacity: 0;
+        }
+    }
+}
+
+a {
+	box-shadow: inset 0 -2px 0 0 $text;
+	transition: .2s ease-in-out;
+	padding: 0 2px;
+
+	&:hover {
+        color: $accent;
+		box-shadow: inset 0 -50px 0 0 $text;
+	}
+}

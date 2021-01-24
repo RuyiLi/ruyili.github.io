@@ -1,0 +1,35 @@
+extends ../layout
+
+block head
+	title Ruyi Li - About Me
+	link(rel='stylesheet' href='/scss/about.scss')
+	script(defer src='/js/parallax.js')
+
+block content
+	// img(src='https://freepngimg.com/thumb/categories/2246.png'
+		style='position:absolute;top:-50vh;left:0;width:100vw;min-height:100vh;')
+	div.has-text-centered.link-group.pb-6
+		a(href='/index.pug') Home
+		a(href='/../resume/resume_cs.pdf') Resumé
+		a(href='/pages/about.pug') Portfolio
+	div.columns
+		div.column.pl-6.pt-6
+			h1.is-size-3.pb-4 About Me
+			p.
+				First year student in the BCS/BBA double-degree program 
+				@ the University of Waterloo and Wilfrid Laurier University.
+			p Proud (?) owner of two beagles.
+
+		svg#lines(xmlns='http://www.w3.org/2000/svg')
+			g
+				line(x1='0' y1='2' x2='100%' y2='2' stroke-width='2' stroke='#fff')
+				line(x1='0' y1='16.67%' x2='100%' y2='16.67%' stroke-width='1' stroke='#fff')
+				line(x1='0' y1='33.33%' x2='100%' y2='33.33%' stroke-width='1' stroke='#fff')
+				line(x1='0' y1='50.00%' x2='100%' y2='50.00%' stroke-width='1' stroke='#fff')
+				line(x1='0' y1='66.67%' x2='100%' y2='66.67%' stroke-width='1' stroke='#fff')
+				line(x1='0' y1='83.33%' x2='100%' y2='83.33%' stroke-width='1' stroke='#fff')
+				line(x1='0' y1='99%' x2='100%' y2='99%' stroke-width='2' stroke='#fff')
+			
+		div.column#dogs
+			img#freckles(src='/img/freckles mad.png' data-depth='0.3')
+			img#nova(src='/img/nova shark 2.png' data-depth='0.5')
