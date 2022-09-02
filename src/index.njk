@@ -1,0 +1,141 @@
+---
+title: Home
+---
+
+<section id="about">
+  <div class="content row">
+    <div class="cell">
+      <div class="box gradient-bg">
+        <h1 class="faded">#about</h1>
+        <h2>Hi, I'm Ruyi (or Roy) 👋.</h2>
+        <h3>Engineer of software, enjoyer of music, petter of dogs.</h3>
+        <a class="button mt fw ct" href="/static/resume.pdf" target="_blank">View my resumé 📃</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="box">
+        <h3>Quick Facts ⚡</h3>
+        <p>3rd year student @ the University of Waterloo. pursuing a degree in Computer Science.</p>
+        <p>Active member in the UWaterloo AniMusic Ensemble, playing the drums.</p>
+      </div>
+      <div class="box">
+        <h3>Experience 💻</h3>
+        <p>Proficient at Python, C++, JavaScript/TypeScript.</p>
+        <p>Currently learning Elixir.</p>
+        <p>Previously worked at:</p>
+        <ul>
+          <li><span class="faded">FreshBooks</span> &mdash; <span class="theme-color">Full Stack Developer</span></li>
+          <li><span class="faded">Tribe Community Platform</span> &mdash; <span class="theme-color">Full Stack Developer</span></li>
+          <li><span class="faded">University of Waterloo</span> &mdash; <span class="theme-color">Teaching Assistant</span></li>
+          <li><span class="faded">WZMH Architects</span> &mdash; <span class="theme-color">Software Engineer</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="gradient-bg shape">
+  <div class="content">
+    <h1 class="faded">#projects</h1>
+    <h2>Some projects I'm proud of 😎</h2>
+    <div class="col">
+      <div class="row">
+        {% for project in projects %}
+          <a class="project" href="{{ project.link }}" target="_blank">
+            <img
+              class="preview"
+              {% if project.image %} src="{{ project.image }}" {% endif %}>
+            <div class="details">
+              <h3>{{ project.name }}</h3>
+              <p>{{ project.description }}</p>
+            </div>
+            <div class="icons">
+              {% for tech in project.used %}
+                {% set properName = tech | capitalize %}
+                <img alt="{{ properName }}" title="{{ properName }}" src="/img/logos/{{ tech }}.webp">
+              {% endfor %}
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+      <a class="button mt" href="https://github.com/RuyiLi/">
+        Click to see all of my other projects on GitHub! &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="content">
+    <h1 class="faded">#contact</h1>
+    <div class="row">
+      <div class="cell">
+        <h3>Professional</h3>
+        <div class="row">
+          <a href="https://github.com/">GitHub</a>
+          <a href="https://www.linkedin.com/in/ruyi-li/">LinkedIn</a>
+          <a href="mailto:ruyili2002@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="cell">
+        <h3>Assorted</h3>
+        <div class="row">
+          <a href="https://devpost.com/RuyiLi">DevPost</a>
+          <a href="https://www.youtube.com/channel/UCl1ZeIbx3ygJTjfC2DfkV7g">YouTube</a>
+          <a href="https://open.spotify.com/user/21v3urmvftlpvnxcqnj66kogi">Spotify</a>
+          <a href="https://www.last.fm/user/tabitabibito">last.fm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="misc">
+  <div class="content col">
+    <div class="gradient-bg box">
+      <h1 class="faded">#miscellaneous</h1>
+      <h2>Recent blog posts</h2>
+      <div class="col">
+        {% for page in search.pages('blog=true draft!=true', 'date', 10) %}
+          <a class="cell colorless" href={{ page.data.url }}>
+            <div class="blog-post row">
+              <span>
+                <span class="faded">{{ page.data.created }}</span>
+                <strong class="hug">{{ page.data.title }}</strong>
+              </span>
+              <div class="cell tags">
+                {% for tag in page.data.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <p>{{ page.data.blurb }}</p>
+          </a>
+        {% else %}
+        <h3>No posts at this time :(</h3>
+        {% endfor %}
+        <a class="button" href="/blog">See all posts &rarr;</a>
+      </div>
+      <hr>
+      <h2>Drum covers</h2>
+      <div class="row">
+        <div class="cell">
+          <h3>Completed</h3>
+          <div class="row">
+          </div>
+        </div>
+        <div class="cell">
+          <h3>In Progress</h3>
+          <div class="row">
+            <a class="button">FLOW - COLORS [Code Geass]</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h2>RKGK</h2>
+      <div class="row">
+        <h3>Waiting for tablet 😞</h3>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+{
+  "layout": "base-layout.njk",
+  "projects": [
+    {
+      "name": "vsordle.io",
+      "description": "Multiplayer wordle.",
+      "used": ["deno", "react"],
+      "link": "https://vsordle.io/",
+      "image": "/img/projects/vsordle.webp"
+    },
+    {
+      "name": "intabs.io",
+      "description": "An intern's best friend.",
+      "used": ["next", "java", "spring"],
+      "link": "https://intabs.io/",
+      "image": "/img/projects/intabs.webp"
+    },
+    {
+      "name": "TriviaMaster",
+      "description": "Your one-stop service for all things trivia.",
+      "used": ["elixir", "phoenix", "remix"],
+      "link": "",
+      "image": "/img/logos/triviamaster.webp"
+    },
+    {
+      "name": "Parcel",
+      "description": "Contributed to Parcel, a zero-config build tool with over 40k stars on GitHub.",
+      "used": ["javascript"],
+      "link": "https://parceljs.org/",
+      "image": "/img/projects/parcel.webp"
+    },
+    {
+      "name": "Image Splitter",
+      "description": "Guess.",
+      "used": ["typescript", "solid", "wasm"],
+      "link": "https://ruyili.ca/image-splitter/",
+      "image": "/img/projects/imagesplitter.webp"
+    },
+    {
+      "name": "Hack the 6ix",
+      "description": "Website for Toronto's largest summer hackathon.",
+      "used": ["typescript", "react"],
+      "link": "https://hackthe6ix.com/",
+      "image": "/img/projects/ht6.webp"
+    },
+    {
+      "name": "BlockOJ",
+      "description": "Drag-and-drop-based online judge. Think Scratch, but for competitive programming. Hack the 6ix 2020 winner.",
+      "used": ["express", "c", "node", "javascript"],
+      "link": "https://devpost.com/software/blockoj-qnpcb7",
+      "image": "/img/projects/blockoj.webp"
+    },
+    {
+      "name": "AGE",
+      "description": "C++ ASCII Game Engine with features such as composable physics, collision, and animation systems.",
+      "used": ["c++"],
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "AutoRune",
+      "description": "Automagic rune page creation for League of Legends.",
+      "used": ["python"],
+      "link": "https://devpost.com/software/autorune",
+      "image": "/img/projects/autorune.webp"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+@import 'helpers';
+
+nav {
+  @extend .row;
+  $logo-size: 4.5rem;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  z-index: 999;
+
+  background: color(--bg-pure, 0.5);
+  backdrop-filter: blur(1rem);
+
+  ul {
+    @extend .row, .nowrap;
+
+    margin: 0;
+    padding: 0;
+
+    &.left,
+    &.right {
+      width: 40%;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  #logo {
+    position: relative;
+    display: block;
+
+    width: $logo-size;
+    height: $logo-size;
+
+    --shadow-color: var(--fg);
+    box-shadow: 0 0 2rem 0 color(--shadow-color, 0.1);
+    border-radius: 100%;
+    background: url('/img/hat-fill.png'), color(--white-pure, 0.25);
+    background-size: 65%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .theme-dark & {
+      filter: invert(1);
+      --shadow-color: var(--bg);
+    }
+
+    // z-index: -1;
+
+    text-align: center;
+    line-height: $logo-size;
+
+    transition: box-shadow 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0 -0.5rem 1.5rem 0.1rem color(--shadow-color, 0.25);
+    }
+  }
+}
+
+main {
+  position: relative;
+  top: 2rem;
+  width: 100vw;
+}
+
+section {
+  $py: 6rem;
+  position: relative;
+  padding: $py 0;
+  width: 100%;
+
+  &.shape {
+    padding: calc(#{$py} + var(--shape-height)) 0;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: var(--shape-height);
+    }
+
+    &::before {
+      top: 0;
+      background: color(--bg);
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    }
+
+    &::after {
+      bottom: -1px;
+      background: color(--bg);
+      clip-path: polygon(10% 100%, 90% 100%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+  }
+}
+
+.content {
+  margin: auto;
+  width: min(60rem, 80vw);
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}

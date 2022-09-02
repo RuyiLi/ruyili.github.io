@@ -1,0 +1,27 @@
+---
+title: Blog
+---
+
+<section class="content">
+  <h1>/blog</h1>
+  <div class="col">
+    {% for page in search.pages('blog=true draft!=true', 'date', 10) %}
+      <a class="cell colorless box gradient-bg" href={{ page.data.url }}>
+        <div class="blog-post row">
+          <span>
+            <span class="faded">{{ page.data.created }}</span>
+            <strong class="hug">{{ page.data.title }}</strong>
+          </span>
+          <div class="cell tags">
+            {% for tag in page.data.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        <p>{{ page.data.blurb }}</p>
+      </a>
+    {% else %}
+    <h3>No posts at this time :(</h3>
+    {% endfor %}
+  </div>
+</section>
