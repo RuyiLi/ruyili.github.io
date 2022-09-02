@@ -1,0 +1,21 @@
+{% extends "base-layout.njk" %}
+
+{% block content %}
+  <section class="content">
+    <div class="box gradient-bg">
+      <h2>{{ title }}</h2>
+      <h4>{{ blurb }}</h4>
+      <div class="row">
+        <div class="tags cell">
+          Tags:
+          {% for tag in page.data.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div> 
+        <p class="faded cell hug">Created on {{ created }}. Last updated at {{ updated }}.</p>
+      </div>
+      <hr>
+      {{ content | safe }}
+    </div>
+  </section>
+{% endblock %}

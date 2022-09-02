@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+@import 'overrides';
+@import 'sections';
+@import 'layout';
+
+// Normalizers
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size: 16px;
+  --gap: 1.5rem;
+  --radius: 1rem;
+  --shape-height: 2.5rem;
+
+  --white: 237, 237, 237;
+  --black: 24, 24, 24;
+  --white-pure: 255, 255, 255;
+  --black-pure: 18, 18, 18;
+
+  --theme-1: 237, 86, 78;
+  --theme-2: 214, 79, 138;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+
+  font-family: 'Epilogue', sans-serif;
+  font-size: var(--font-size);
+
+  --fg: var(--black);
+  --bg: var(--white);
+  --fg-pure: var(--black-pure);
+  --bg-pure: var(--white-pure);
+  &.theme-dark {
+    --fg: var(--white);
+    --bg: var(--black);
+    --fg-pure: var(--white-pure);
+    --bg-pure: var(--black-pure);
+  }
+
+  color: color(--fg);
+  background: color(--bg);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  display: inline-block;
+  color: currentcolor;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color 0.1s ease-in-out;
+  &:hover {
+    color: color(--theme-1);
+
+    &.colorless {
+      color: color(--fg-pure, 0.75);
+    }
+  }
+}

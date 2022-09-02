@@ -1,0 +1,121 @@
+@import 'helpers';
+
+.project {
+  @extend .box, .cell;
+
+  position: relative;
+  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  min-width: 16rem;
+  max-width: 100%;
+
+  border: 1px solid color(--bg, 0.3);
+  border-bottom-width: 0.25rem;
+  // box-shadow: 0 0.5rem 0.75rem 0 color(--bg, 0.5);
+  z-index: 1;
+
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.7rem 0.75rem 0 color(--bg, 0.5);
+
+    .icons,
+    .details {
+      backdrop-filter: blur(0);
+      opacity: 0.9;
+    }
+  }
+
+  .preview,
+  .details,
+  .icons {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-radius: var(--radius);
+  }
+
+  .preview {
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  .details {
+    top: 0;
+    height: 100%;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+
+    color: color(--fg);
+    background: color(--bg, 0.8);
+    backdrop-filter: blur(0.2rem);
+    transition: 0.1s ease-in-out;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.5rem;
+    bottom: -1rem;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+    min-height: 3rem;
+
+    border-radius: 0;
+    left: -0.5rem;
+    width: calc(100% + 1rem);
+    background: color(--fg);
+    box-shadow: 0 0.1rem 0.5rem 0 color(--bg, 0.5);
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: calc(-0.5rem + 1px);
+      width: 0;
+      height: 0;
+      border: calc(0.5rem - 1px) solid transparent;
+    }
+
+    &::before {
+      left: 0;
+      border-left-width: 0;
+      border-right-color: color(--fg, 0.75);
+    }
+
+    &::after {
+      right: 0;
+      border-right-width: 0;
+      border-left-color: color(--fg, 0.75);
+    }
+
+    img {
+      object-fit: contain;
+      // width: 2rem;
+      height: 2rem;
+      margin: 0;
+
+      &.on-white {
+        background: var(--fg);
+      }
+    }
+  }
+}
+
+.blog-post {
+  @extend .between, .nowrap, .hug;
+  border-radius: var(--radius);
+
+  + p {
+    padding: 0 0.5rem;
+  }
+
+  .tags {
+    text-align: right;
+  }
+}
