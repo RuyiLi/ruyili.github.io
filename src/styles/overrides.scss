@@ -34,6 +34,18 @@ ul {
   }
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 1px solid color(--fg);
+    padding: 1rem;
+    margin: 0;
+  }
+}
+
 hr {
   --triangle-width: 1rem;
 
@@ -48,6 +60,7 @@ hr {
   overflow: visible;
   box-shadow: 0 0.2rem 0.4rem 0 color(--black, 0.5);
 
+  // TODO Convert the "banner wings" to mixins?
   &::before,
   &::after {
     content: '';
@@ -57,16 +70,17 @@ hr {
     width: 0;
     height: 0;
     border: 1rem solid transparent;
-    border-top-width: 0;
   }
 
-  &:nth-of-type(odd)::before {
+  &::before {
     left: 0;
-    border-bottom-color: color(--theme-1);
+    border-left-width: 0;
+    border-right-color: color(--fg, 0.75);
   }
 
-  &:nth-of-type(even)::after {
+  &::after {
     right: 0;
-    border-bottom-color: color(--theme-2);
+    border-right-width: 0;
+    border-left-color: color(--fg, 0.75);
   }
 }
