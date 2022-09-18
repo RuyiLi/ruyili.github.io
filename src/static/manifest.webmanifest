@@ -1,8 +1,8 @@
 {
-    "name": "Ruyi Li - My Website",
-    "description": "Welcome to my website!",
-    "short_name": "Ruyi Li",
-    "display": "standalone",
-    "background_color": "#4564A7",
-    "theme_color": "#4564A7"
+  "name": "Ruyi Li",
+  "description": "Welcome to my website!",
+  "short_name": "Ruyi Li",
+  "display": "standalone",
+  "background_color": "#4564A7",
+  "theme_color": "#4564A7"
 }
