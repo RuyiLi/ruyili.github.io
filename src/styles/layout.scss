@@ -43,7 +43,7 @@ nav {
     --shadow-color: var(--fg);
     box-shadow: 0 0 2rem 0 color(--shadow-color, 0.1);
     border-radius: 100%;
-    background: url('/img/hat-fill.png'), color(--white-pure, 0.25);
+    background: url('/img/hat-fill.png'), color(--white-pure);
     background-size: 65%, 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@ section {
     }
 
     &::before {
-      top: 0;
+      top: -1px;
       background: color(--bg);
       clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
     }

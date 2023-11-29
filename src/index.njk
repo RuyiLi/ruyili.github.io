@@ -8,8 +8,7 @@ title: Home
       <div class="box gradient-bg">
         <h1 class="faded">#about</h1>
         <h2>Hi, I'm Ruyi (or Roy) 👋.</h2>
-        <h3>Engineer of software, enjoyer of music, petter of dogs.</h3>
-        <a class="button mt fw ct" href="https://github.com/RuyiLi/resume/raw/master/current.pdf" target="_blank">View my resumé 📃</a>
+        <h3>Programmer, drummer, and proud beagle owner.</h3>
         <a class="button mt fw ct" href="https://github.com/RuyiLi/" target="_blank">GitHub 🐙🐈</a>
         <a class="button mt fw ct" href="https://www.linkedin.com/in/ruyi-li/" target="_blank">LinkedIn 🌎</a>
       </div>
@@ -17,19 +16,20 @@ title: Home
     <div class="col">
       <div class="box">
         <h3>Quick Facts ⚡</h3>
-        <p>3rd year student @ the University of Waterloo. pursuing a degree in Computer Science.</p>
-        <p>Active member in the UWaterloo AniMusic Ensemble, playing the drums.</p>
+        <p>3rd year student @ the University of Waterloo, pursuing a degree in Computer Science.</p>
       </div>
       <div class="box">
         <h3>Experience 💻</h3>
         <p>Proficient at Python, C++, JavaScript/TypeScript.</p>
-        <p>Currently learning Elixir.</p>
+        <p>Currently learning Elixir, Go, and Rust.</p>
         <p>Previously worked at:</p>
         <ul>
-          <li><span class="faded">FreshBooks</span> &mdash; <span class="theme-color">Full Stack Developer</span></li>
-          <li><span class="faded">Tribe Community Platform</span> &mdash; <span class="theme-color">Full Stack Developer</span></li>
+          <li><span class="faded">Uncountable</span> &mdash; <span class="theme-color">SWE Intern</span></li>
+          <li><span class="faded">Veeva</span> &mdash; <span class="theme-color">SWE Intern</span></li>
+          <li><span class="faded">FreshBooks</span> &mdash; <span class="theme-color">SWE Intern</span></li>
+          <li><span class="faded">Tribe Community Platform</span> &mdash; <span class="theme-color">SWE Intern</span></li>
           <li><span class="faded">University of Waterloo</span> &mdash; <span class="theme-color">Teaching Assistant</span></li>
-          <li><span class="faded">WZMH Architects</span> &mdash; <span class="theme-color">Software Engineer</span></li>
+          <li><span class="faded">WZMH Architects</span> &mdash; <span class="theme-color">SWE Contractor</span></li>
         </ul>
       </div>
     </div>
@@ -52,10 +52,10 @@ title: Home
               <p>{{ project.description }}</p>
             </div>
             <div class="icons">
-              {% for tech in project.used %}
+              {# {% for tech in project.used %}
                 {% set properName = tech | capitalize %}
                 <img alt="{{ properName }}" title="{{ properName }}" src="/img/logos/{{ tech }}.webp">
-              {% endfor %}
+              {% endfor %} #}
             </div>
           </a>
         {% endfor %}
@@ -117,26 +117,6 @@ title: Home
         <h3>No posts at this time :(</h3>
         {% endfor %}
         <a class="button" href="/blog">See all posts &rarr;</a>
-      </div>
-      <hr>
-      <h2>Drum covers</h2>
-      <div class="row">
-        <div class="cell">
-          <h3>Completed</h3>
-          <div class="row">
-          </div>
-        </div>
-        <div class="cell">
-          <h3>In Progress</h3>
-          <a class="button mt">FLOW - COLORS [Code Geass]</a>
-          <a class="button mt">LiSa - Gurenge [Demon Slayer]</a>
-          <a class="button mt">wowaka - and I'm home [Madoka Magica]</a>
-        </div>
-      </div>
-      <hr>
-      <h2>Drawings</h2>
-      <div class="row">
-        <h3>Waiting for tablet 😞</h3>
       </div>
     </div>
   </div>
